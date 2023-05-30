@@ -1,18 +1,63 @@
+@use "./breakpoints" as *;
+
 @font-face {
-    font-family: Avenir;
+    font-family: avenir-bold;
     src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format(opentype);
     font-style:normal;
-    font-weight:bold;
+    font-weight:700;
 }   
+
 @font-face {
-    font-family: Avenir;
+    font-family: avenir-demi;
     src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format(opentype);
     font-style: normal;
-    font-weight: medium;
+    font-weight: 600;
 }
+
 @font-face {
-    font-family: Avenir;
+    font-family: avenir;
     src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format(opentype);
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
+}
+// VARIABLES
+// $avernir-bold:'avenir-bold',;
+// $avernir-demi:'avenir-demi',;
+// $avernir:'avenir';
+
+h1{
+    font-family: avenir-bold;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold 700;
+    @include media-tablet{
+        font-size: 60px;
+        line-height: 68px;
+    }
+
+}
+h2{
+    font-family: avenir-bold;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold 700;
+    @include media-tablet{
+        font-family: avenir;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+}
+h3{ 
+    font-family: avenir-demi;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    @include media-tablet{
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+
 }
