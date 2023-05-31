@@ -21,43 +21,12 @@
     font-weight: 400;
 }
 // VARIABLES
-// $avernir-bold:'avenir-bold',;
-// $avernir-demi:'avenir-demi',;
-// $avernir:'avenir';
+// $avernir__pageheader--mobile: 
+// font-size: 24px;
+// line-height: 32px;
+// font-weight: 700 bold;
 
-h1{
-    font-family: avenir-bold;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: bold 700;
-    @include media-tablet{
-        font-size: 60px;
-        line-height: 68px;
-    }
-
-}
-h2{
-    font-family: avenir-bold;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: bold 700;
-    @include media-tablet{
-        font-family: avenir;
-        font-size: 36px;
-        line-height: 44px;
-        font-weight: 700;
-    }
-
-}
-h3{ 
-    font-family: avenir-demi;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
-    @include media-tablet{
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 600;
-    }
-
-}
+// $avenir__sectionheader--mobile:
+// font-size: 24px
+// line-height: 32px
+// font-weight: 700 bold;
