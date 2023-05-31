@@ -42,8 +42,6 @@ header{
     line-height: 32px;
     font-weight: 700 bold;
     color:$primaryWhite;
-    // flex-direction: column;
-    // justify-content: center;
 }
 // .hero__overlay{
 //     background-color: $primaryBandsite;
@@ -51,6 +49,10 @@ header{
 // }   
 .hero__title{
     padding-left: 16px;
+    display: flex;
+    align-items: center;
+    // flex-direction: column;
+    // justify-content: space-around;
 }
 .about{
     margin: 0;
@@ -64,5 +66,80 @@ header{
 }
 .about__title--image {
     height: 25vh;
+    // justify-content: center;
     
+}
+.about__quote{
+    font-family: avenir;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+.about__subtitle{
+    font-family: avenir;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+.about__body{
+    font-family: avenir;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+.photogallery__title{
+    font-family: avernir;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700 bold;
+    padding: 16px;
+}
+.photogallery__photo{
+    height: 25vh;
+    padding: 16px;
+}
+.footer{
+    background-color: $primaryBandsite;
+    color: $primaryWhite;
+
+    &__title{
+        font-family: avernir;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700 bold;
+        padding: 8px 8px 8px 16px;
+    }
+
+    &__subheader{
+        font-family: avenir;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+        padding: 8px 8px 8px 16px;
+    }
+    &__text{
+        font-family: avenir;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        padding: 8px 8px 8px 16px;
+    }
+    &__email{
+        font-family: avenir;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        padding: 8px 8px 8px 16px;
+    }
+    &__bandsite--logo{
+        padding: 8px 8px 8px 16px;
+    }
+}
+
+.sociallogo{
+    padding: 8px 8px 8px 16px;
+
 }
