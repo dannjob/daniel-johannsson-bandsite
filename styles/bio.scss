@@ -12,7 +12,7 @@
 header{
     background-color: $primaryBandsite;
     color: $primaryWhite;
-    padding: 8px 16px 0 16px;
+    // padding: 8px 16px 0 16px;
 
 }
 .header__bandsite--logo {
@@ -23,26 +23,35 @@ header{
     height: 3vh
 }
 .header {
-    justify-content: center;
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
 
 }
-.nav__list{
+
+.nav{
     display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
 
+    &__list{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+        padding-bottom: 8px;
+    
+        &--active {
+            border-bottom: 4px solid $primaryWhite;
+            width: 50%;
+        }
+    }
+    &__list--inactive {
+            border-bottom: 4px solid $primaryBandsite;
+            width: 50%;
+        }
+    }
 
-    &--active {
-    border-bottom: 4px solid $primaryWhite;
-    padding-bottom: 100%;
-}
-}
 .hero{
     background-image: url(../assets/Images/hero-bio.jpg);
     background-size:cover;
@@ -59,12 +68,14 @@ header{
 
     // &__overlay{
     //     background-color: $primaryBandsite 0.5; 
-    }
+   
 
     &__title{
     padding-left: 16px;
+
     
-    }
+    } 
+}
 .about{
     margin: 0;
     padding: 16px;
@@ -160,13 +171,13 @@ header{
     }
     &__text--label{
         font-family: avenir;
-        font-size: 10x;
+        font-size: 10px;
         line-height: 20px;
         font-weight: 700;
-        padding: 8px 8px 8px 16px;
+        padding: 0 8px 8px 16px;
     }
 }
 
-.sociallogo{
+.socialicon{
     padding: 8px 8px 8px 16px; 
 }

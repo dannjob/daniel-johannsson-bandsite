@@ -25,7 +25,6 @@
 header {
   background-color: #323232;
   color: #ffffff;
-  padding: 8px 16px 0 16px;
 }
 
 .header__bandsite--logo {
@@ -37,23 +36,30 @@ header {
 }
 
 .header {
-  justify-content: center;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
 }
 
+.nav {
+  display: flex;
+}
 .nav__list {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: center;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
+  padding-bottom: 8px;
 }
 .nav__list--active {
   border-bottom: 4px solid #ffffff;
-  padding-bottom: 8px;
+  width: 50%;
+}
+.nav__list--inactive {
+  border-bottom: 4px solid #323232;
+  width: 50%;
 }
 
 .hero {
@@ -68,10 +74,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: black;
-}
-.hero__overlay {
-  background-color: #323232 0.5;
 }
 .hero__title {
   padding-left: 16px;
@@ -165,12 +167,19 @@ header {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  padding: 8px 8px 8px 16px;
+  padding: 8px 8px 16px 16px;
 }
 .footer__bandsite--logo {
-  padding: 8px 8px 8px 16px;
+  padding: 16px 8px 8px 16px;
+}
+.footer__text--label {
+  font-family: avenir;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  padding: 0 8px 8px 16px;
 }
 
-.sociallogo {
+.socialicon {
   padding: 8px 8px 8px 16px;
 }/*# sourceMappingURL=bio.css.map */
