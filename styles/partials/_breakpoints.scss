@@ -1,5 +1,5 @@
 $media-tablet: 768px;
-$desktop-breakpoint: 1920px;
+$desktop-breakpoint: 1280px;
 
 @mixin media-tablet{
     @media (min-width: $media-tablet){

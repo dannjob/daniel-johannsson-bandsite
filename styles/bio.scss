@@ -20,9 +20,13 @@ header{
     @include media-tablet{
         display: flex;
         justify-content: flex-start;
-        align-items: center;
         width: 100%;
         padding: 24px 36px 0 36px;
+    }
+    @include media-desktop{
+        padding: 48px 0 0 10%;
+        align-items: baseline;
+        height: 2vh;
     }
 
 
@@ -32,18 +36,18 @@ header{
     justify-content: center;
     padding-bottom: 8px;
     padding-top: 8px;
-    height: 3vh;
+    // height: 3vh;
 
     @include media-tablet{
         padding-right: 36px;
-
-}
+    }
+    @include media-desktop{
+        height:20px
+    }
 }
 
 .nav{
     display: flex;
-
-    
 
     &__list{
         display: flex;
@@ -90,9 +94,6 @@ header{
     justify-content: center;
     background-color: $primaryBandsite 0.5;
 
-    // &__overlay{
-
-    // }
     &__title{
     padding-left: 16px;
 
@@ -103,9 +104,11 @@ header{
         font-weight: $header-font-weight-tablet;
         padding-left: 36px;
     }
-
-    
     } 
+    @include media-desktop{
+        padding-left: 10%;
+        height: 30vh;
+    }
 }
 .about{
     margin: 0;
