@@ -40,7 +40,7 @@ header {
 }
 @media (min-width: 1280px) {
   header {
-    padding: 48px 0 0 10%;
+    padding: 48px 0 0 8%;
     align-items: baseline;
     height: 2vh;
   }
@@ -122,8 +122,8 @@ header {
 }
 @media (min-width: 1280px) {
   .hero {
-    padding-left: 10%;
-    height: 30vh;
+    padding-left: 8%;
+    height: 25vh;
   }
 }
 
@@ -134,6 +134,11 @@ header {
 @media (min-width: 768px) {
   .about {
     padding: 36px;
+  }
+}
+@media (min-width: 1280px) {
+  .about {
+    padding: 36px 8%;
   }
 }
 .about__title {
@@ -239,11 +244,7 @@ header {
 .photogallery {
   margin: 0;
   padding: 0;
-}
-@media (min-width: 768px) {
-  .photogallery {
-    padding: 36px 18px;
-  }
+  background-color: #FAFAFA;
 }
 .photogallery__title {
   font-family: avernir;
@@ -261,6 +262,12 @@ header {
     font-weight: 700;
   }
 }
+@media (min-width: 1280px) {
+  .photogallery__title {
+    padding-bottom: 36px;
+    padding-left: 8%;
+  }
+}
 .photogallery__photo {
   padding: 8px 16px;
   display: flex;
@@ -272,6 +279,12 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 18px;
+  }
+}
+@media (min-width: 1280px) {
+  .photogallery__photos {
+    padding-bottom: 36px;
+    padding: 36px 8%;
   }
 }
 
@@ -368,7 +381,6 @@ header {
 @media (min-width: 768px) {
   .footer__contacts {
     display: flex;
-    justify-content: center;
   }
 }
 @media (min-width: 768px) {
