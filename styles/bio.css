@@ -224,6 +224,11 @@ header {
   margin: 0;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .photogallery {
+    padding: 36px 18px;
+  }
+}
 .photogallery__title {
   font-family: avernir;
   font-size: 24px;
@@ -232,15 +237,36 @@ header {
   padding: 16px 16px 8px 16px;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .photogallery__title {
+    font-family: avenir-bold;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+}
 .photogallery__photo {
   padding: 8px 16px;
   display: flex;
   width: 90%;
 }
 
+@media (min-width: 768px) {
+  .photogallery__photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+  }
+}
+
 .footer {
   background-color: #323232;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 36px;
+  }
 }
 .footer__title {
   font-family: avernir;
@@ -249,12 +275,28 @@ header {
   font-weight: 700 bold;
   padding: 8px 8px 8px 16px;
 }
+@media (min-width: 768px) {
+  .footer__title {
+    font-family: avenir-bold;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+}
 .footer__subheader {
   font-family: avenir;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
   padding: 8px 8px 8px 16px;
+}
+@media (min-width: 768px) {
+  .footer__subheader {
+    font-family: avenir-bold;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
 }
 .footer__text {
   font-family: avenir;
@@ -263,12 +305,28 @@ header {
   font-weight: 400;
   padding: 8px 8px 8px 16px;
 }
+@media (min-width: 768px) {
+  .footer__text {
+    font-family: avenir;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+}
 .footer__email {
   font-family: avenir;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   padding: 8px 8px 16px 16px;
+}
+@media (min-width: 768px) {
+  .footer__email {
+    font-family: avenir;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
 }
 .footer__bandsite--logo {
   padding: 16px 8px 8px 16px;
@@ -279,6 +337,33 @@ header {
   line-height: 20px;
   font-weight: 700;
   padding: 0 8px 8px 16px;
+}
+@media (min-width: 768px) {
+  .footer__text--label {
+    font-family: avenir;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+}
+.footer__contacts {
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  .footer__contacts {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer__top {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.address {
+  font-style: italic;
 }
 
 .socialicon {
