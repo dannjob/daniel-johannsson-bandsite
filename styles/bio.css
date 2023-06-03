@@ -100,18 +100,18 @@ header {
   background-size: cover;
   background-position: center;
   height: 25vh;
+  display: flex;
+  background-color: #323232 0.5;
+}
+.hero__title {
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
   font-family: Avenir;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #323232 0.5;
-}
-.hero__title {
-  padding-left: 16px;
 }
 @media (min-width: 768px) {
   .hero__title {
@@ -124,8 +124,23 @@ header {
 }
 @media (min-width: 1280px) {
   .hero {
+    height: 50vh;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__title {
     padding-left: 8%;
-    height: 25vh;
+  }
+}
+.hero__overlay {
+  height: 25vh;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.5);
+  z-index: 2;
+}
+@media (min-width: 1280px) {
+  .hero__overlay {
+    height: 50vh;
   }
 }
 
@@ -365,6 +380,13 @@ header {
 .footer__bandsite--logo {
   padding: 16px 8px 8px 16px;
 }
+@media (min-width: 768px) {
+  .footer__bandsite--logo {
+    position: relative;
+    bottom: 220px;
+    left: 80%;
+  }
+}
 .footer__text--label {
   font-family: avenir;
   font-size: 10px;
@@ -401,4 +423,9 @@ header {
 
 .socialicon {
   padding: 8px 8px 8px 16px;
+}
+@media (min-width: 768px) {
+  .socialicon {
+    padding: 18px 18px 18px 36px;
+  }
 }/*# sourceMappingURL=bio.css.map */

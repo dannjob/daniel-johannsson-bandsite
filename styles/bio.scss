@@ -23,8 +23,9 @@ header{
         justify-content: flex-start;
         width: 100%;
         padding: 24px 36px 0 36px;
+        
     }
-    
+
     @include media-desktop{
         padding: 48px 0 0 8%;
         align-items: baseline;
@@ -84,18 +85,19 @@ header{
     background-size:cover;
     background-position:center;
     height: 25vh;
+    display: flex;
+    background-color: $primaryBandsite 0.5;
+
+    &__title{
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
     font-family: Avenir;
     font-size: $header-font-size-mobile;
     line-height: $header-line-height-mobile;
     font-weight: $header-font-weight-mobile;
     color:$primaryWhite;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $primaryBandsite 0.5;
 
-    &__title{
-    padding-left: 16px;
 
     @include media-tablet{
         font-family: avenir-bold;
@@ -106,8 +108,23 @@ header{
     }
     } 
     @include media-desktop{
+        height: 50vh;
+    }
+    &__title{
+        @include media-desktop{
         padding-left: 8%;
+        
+        }
+    }
+    &__overlay{
         height: 25vh;
+        width: 100%;
+        background-color: rgba(50,50,50,.5);
+        z-index: 2;
+
+        @include media-desktop{
+            height: 50vh;
+        }
     }
 }
 .about{
@@ -335,10 +352,12 @@ header{
     &__bandsite--logo{
         padding: 16px 8px 8px 16px;
 
-        // @include media-tablet{
-        //     position: sticky;
-        //     bottom: 225px 0 0 500px;
-        // }
+        @include media-tablet{
+            position: relative;
+            bottom: 220px; 
+            left: 80%;
+            // I am not sure if this is the best way to do this?
+        }
     }
     &__text--label{
         font-family: avenir;
@@ -375,4 +394,7 @@ header{
 
 .socialicon{
     padding: 8px 8px 8px 16px; 
+    @include media-tablet {
+        padding: 18px 18px 18px 36px
+    }
 }
