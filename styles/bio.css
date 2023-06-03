@@ -26,6 +26,7 @@ header {
   background-color: #323232;
   color: #ffffff;
   padding: 8px 0 0 0;
+  font-family: avenir-bold;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -42,15 +43,14 @@ header {
   header {
     padding: 48px 0 0 8%;
     align-items: baseline;
-    height: 2vh;
   }
 }
 
 .header__bandsite--logo {
   display: flex;
   justify-content: center;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 8px 0;
+  height: 3vh;
 }
 @media (min-width: 768px) {
   .header__bandsite--logo {
@@ -70,6 +70,7 @@ header {
   display: flex;
   list-style-type: none;
   justify-content: center;
+  font-family: avenir-demi;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
@@ -99,9 +100,10 @@ header {
   background-size: cover;
   background-position: center;
   height: 25vh;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
+  font-family: Avenir;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -142,9 +144,11 @@ header {
   }
 }
 .about__title {
+  font-family: avenir-bold;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+  color: #323232;
   padding-bottom: 16px;
 }
 @media (min-width: 768px) {
@@ -171,6 +175,7 @@ header {
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
+  color: #323232;
   padding-bottom: 8px;
 }
 @media (min-width: 768px) {
@@ -194,10 +199,10 @@ header {
 }
 
 .about__subtitle {
-  font-family: avenir;
+  font-family: avenir-demi;
   font-size: 14px;
   line-height: 22px;
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 16px;
   padding-top: 8px;
 }
@@ -221,7 +226,7 @@ header {
 }
 @media (min-width: 768px) {
   .about__body {
-    font-family: avenir-demi;
+    font-family: avenir;
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
@@ -247,7 +252,7 @@ header {
   background-color: #FAFAFA;
 }
 .photogallery__title {
-  font-family: avernir;
+  font-family: avenir-bold;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
@@ -298,11 +303,11 @@ header {
   }
 }
 .footer__title {
-  font-family: avernir;
+  font-family: avenir-bold;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 700 bold;
-  padding: 8px 8px 8px 16px;
+  font-weight: 700;
+  padding: 16px 8px 8px 16px;
 }
 @media (min-width: 768px) {
   .footer__title {
@@ -313,10 +318,10 @@ header {
   }
 }
 .footer__subheader {
-  font-family: avenir;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
+  font-family: avenir-bold;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
   padding: 8px 8px 8px 16px;
 }
 @media (min-width: 768px) {
@@ -365,7 +370,7 @@ header {
   font-size: 10px;
   line-height: 20px;
   font-weight: 700;
-  padding: 0 8px 8px 16px;
+  padding: 0 0 16px 16px;
 }
 @media (min-width: 768px) {
   .footer__text--label {

@@ -13,9 +13,10 @@ header{
     background-color: $primaryBandsite;
     color: $primaryWhite;
     padding: 8px 0 0 0;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
+    font-family: avenir-bold;
+    font-size: $section-font-size-mobile;
+    line-height: $section-line-height-mobile;
+    font-weight: $section-font-weight-mobile;
 
     @include media-tablet{
         display: flex;
@@ -23,24 +24,22 @@ header{
         width: 100%;
         padding: 24px 36px 0 36px;
     }
+    
     @include media-desktop{
         padding: 48px 0 0 8%;
         align-items: baseline;
-        height: 2vh;
     }
-
-
 }
 .header__bandsite--logo {
     display: flex;
     justify-content: center;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    // height: 3vh;
+    padding: 8px 0;
+    height: 3vh;
 
     @include media-tablet{
         padding-right: 36px;
     }
+
     @include media-desktop{
         height:20px
     }
@@ -53,9 +52,10 @@ header{
         display: flex;
         list-style-type: none;
         justify-content: center;
-        font-size: 14px;
-        line-height: 22px;
-        font-weight: 600;
+        font-family: avenir-demi;
+        font-size: $subheader-font-size-mobile;
+        line-height: $subheader-line-height-mobile;
+        font-weight: $subheader-font-weight-mobile;
         padding-bottom: 8px;
     
         &--active {
@@ -65,7 +65,6 @@ header{
         @include media-tablet{
             padding-left: 36px;
             padding-right: 36px;
-
             font-family: avenir;
             font-size: $subheader-font-size-tablet;
             line-height: $subheader-line-height-tablet;
@@ -85,9 +84,10 @@ header{
     background-size:cover;
     background-position:center;
     height: 25vh;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
+    font-family: Avenir;
+    font-size: $header-font-size-mobile;
+    line-height: $header-line-height-mobile;
+    font-weight: $header-font-weight-mobile;
     color:$primaryWhite;
     display: flex;
     flex-direction: column;
@@ -117,16 +117,19 @@ header{
     @include media-tablet{
         padding: 36px;
     }
+    
     @include media-desktop{
         padding: 36px 8%;
     }
     
 
     &__title{
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 700;
-        padding-bottom: 16px;
+        font-family: avenir-bold;
+        font-size: $section-font-size-mobile;
+        line-height: $section-line-height-mobile;
+        font-weight: $section-font-weight-mobile;
+        color:$primaryBandsite;
+        padding-bottom:16px;
 
         @include media-tablet{
             padding-top: 12px;
@@ -139,6 +142,7 @@ header{
 
         &--image {
             width:100%;
+
             @include media-tablet{
                 padding: 16px 36px;
                 width:90%;
@@ -150,9 +154,10 @@ header{
 }
 .about__quote{
     font-family: avenir-demi;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
+    font-size: $subheader-font-size-mobile;
+    line-height: $subheader-line-height-mobile;
+    font-weight: $subheader-font-weight-mobile;
+    color:$primaryBandsite;
     padding-bottom: 8px;
 
     @include media-tablet{
@@ -174,10 +179,10 @@ header{
     }
 }
 .about__subtitle{
-    font-family: avenir;
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
+    font-family: avenir-demi;
+    font-size:$body-font-size-tablet;
+    line-height: $body-line-height-tablet;
+    font-weight: $body-font-weight-tablet;
     padding-bottom: 16px;
     padding-top: 8px;
 
@@ -191,20 +196,21 @@ header{
 }
 .about__body{
     font-family: avenir;
-    font-size: 13px;
-    line-height: 18px;
-    font-weight: 400;
+    font-size: $body-font-size-mobile;
+    line-height: $body-line-height-mobile;
+    font-weight: $body-font-weight-mobile;
     padding-bottom: 16px;
     color: $primaryBandsite;
 
     @include media-tablet{
-        font-family: avenir-demi;
+        font-family: avenir;
         font-size:  $body-font-size-tablet;
         line-height: $body-line-height-tablet;
         font-weight: $body-font-weight-tablet;
     }
 }
 .about__paragraphs{
+
     @include media-tablet{
         display: flex;
         column-gap: 36px;
@@ -223,10 +229,10 @@ header{
     
 
     &__title{
-        font-family: avernir;
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 700;
+        font-family: avenir-bold;
+        font-size: $section-font-size-mobile;
+        line-height: $section-line-height-mobile;
+        font-weight: $section-font-weight-mobile;
         padding: 16px 16px 8px 16px;
         color:$primaryBandsite;
 
@@ -249,6 +255,7 @@ header{
 }
 }
 .photogallery__photos{
+
     @include media-tablet{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -269,11 +276,11 @@ header{
     }
 
     &__title{
-        font-family: avernir;
-        font-size: 24px;
-        line-height: 32px;
-        font-weight: 700 bold;
-        padding: 8px 8px 8px 16px;
+        font-family: avenir-bold;
+        font-size: $section-font-size-mobile;
+        line-height: $section-line-height-mobile;
+        font-weight: $section-font-weight-mobile;
+        padding: 16px 8px 8px 16px;
     
         @include media-tablet{
             font-family: avenir-bold;
@@ -284,10 +291,10 @@ header{
     }
 
     &__subheader{
-        font-family: avenir;
-        font-size: 14px;
-        line-height: 22px;
-        font-weight: 600;
+        font-family: avenir-bold;
+        font-size: $footer-font-size-mobile;
+        line-height: $footer-line-height-mobile;
+        font-weight: $footer-font-weight-mobile;
         padding: 8px 8px 8px 16px;
 
         @include media-tablet{
@@ -299,9 +306,9 @@ header{
     }
     &__text{
         font-family: avenir;
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 400;
+        font-size: $footer-font-size-mobile;
+        line-height: $footer-line-height-mobile;
+        font-weight: $footer-font-weight-mobile;
         padding: 8px 8px 8px 16px;
 
         @include media-tablet{
@@ -313,9 +320,9 @@ header{
     }
     &__email{
         font-family: avenir;
-        font-size: 13px;
-        line-height: 18px;
-        font-weight: 400;
+        font-size: $footer-font-size-mobile;
+        line-height: $footer-line-height-mobile;
+        font-weight: $footer-font-weight-mobile;
         padding: 8px 8px 16px 16px;
 
         @include media-tablet{
@@ -335,10 +342,10 @@ header{
     }
     &__text--label{
         font-family: avenir;
-        font-size: 10px;
-        line-height: 20px;
-        font-weight: 700;
-        padding: 0 8px 8px 16px;
+        font-size: $label-font-size-mobile;
+        line-height: $label-line-height-mobile;
+        font-weight: $label-font-weight-mobile;
+        padding: 0 0 16px 16px;
 
         @include media-tablet{
             font-family: avenir;
@@ -349,13 +356,13 @@ header{
     }
     &__contacts{
         list-style-type: none;
+
         @include media-tablet{
             display: flex;
-            // justify-content: center;
-            
         }
     }
     &__top{
+
         @include media-tablet{
             display: flex;
             align-items: baseline;
