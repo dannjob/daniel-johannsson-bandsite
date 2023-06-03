@@ -125,6 +125,7 @@ header {
 @media (min-width: 1280px) {
   .hero {
     height: 50vh;
+    width: 100%;
   }
 }
 @media (min-width: 1280px) {
@@ -383,7 +384,7 @@ header {
 @media (min-width: 768px) {
   .footer__bandsite--logo {
     position: relative;
-    bottom: 220px;
+    bottom: 200px;
     left: 80%;
   }
 }

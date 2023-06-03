@@ -109,6 +109,8 @@ header{
     } 
     @include media-desktop{
         height: 50vh;
+        width: 100%;
+        
     }
     &__title{
         @include media-desktop{
@@ -124,6 +126,7 @@ header{
 
         @include media-desktop{
             height: 50vh;
+                    
         }
     }
 }
@@ -354,10 +357,10 @@ header{
 
         @include media-tablet{
             position: relative;
-            bottom: 220px; 
+            bottom: 200px; 
             left: 80%;
-            // I am not sure if this is the best way to do this?
-        }
+        }// I am not sure if this is the best way to do this?
+        // }
     }
     &__text--label{
         font-family: avenir;
