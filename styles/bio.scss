@@ -12,7 +12,19 @@
 header{
     background-color: $primaryBandsite;
     color: $primaryWhite;
-    // padding: 8px 16px 0 16px;
+    padding: 8px 0 0 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+
+    @include media-tablet{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 24px 36px 0 36px;
+    }
+
 
 }
 .header__bandsite--logo {
@@ -20,17 +32,18 @@ header{
     justify-content: center;
     padding-bottom: 8px;
     padding-top: 8px;
-    height: 3vh
-}
-.header {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 700;
+    height: 3vh;
 
+    @include media-tablet{
+        padding-right: 36px;
+
+}
 }
 
 .nav{
     display: flex;
+
+    
 
     &__list{
         display: flex;
@@ -45,12 +58,23 @@ header{
             border-bottom: 4px solid $primaryWhite;
             width: 50%;
         }
+        @include media-tablet{
+            padding-left: 36px;
+            padding-right: 36px;
+
+            font-family: avenir;
+            font-size: $subheader-font-size-tablet;
+            line-height: $subheader-line-height-tablet;
+            font-weight: $subheader-font-weight-tablet;
+    
     }
-    &__list--inactive {
+    }
+        &__list--inactive {
             border-bottom: 4px solid $primaryBandsite;
             width: 50%;
         }
     }
+
 
 .hero{
     background-image: url(../assets/Images/hero-bio.jpg);
@@ -64,14 +88,21 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    background-color: $primaryBandsite 0.5;
 
     // &__overlay{
-    //     background-color: $primaryBandsite 0.5; 
-   
 
+    // }
     &__title{
     padding-left: 16px;
+
+    @include media-tablet{
+        font-family: avenir-bold;
+        font-size: $header-font-size-tablet;
+        line-height: $header-line-height-tablet;
+        font-weight: $header-font-weight-tablet;
+        padding-left: 36px;
+    }
 
     
     } 
@@ -80,24 +111,59 @@ header{
     margin: 0;
     padding: 16px;
 
+    @include media-tablet{
+        padding: 36px;
+    }
+
     &__title{
         font-size: 24px;
         line-height: 32px;
         font-weight: 700;
         padding-bottom: 16px;
 
+        @include media-tablet{
+            padding-top: 12px;
+            font-family: avenir-bold;
+            font-size:$section-font-size-tablet;
+            line-height:$section-line-height-tablet;
+            font-weight: $section-font-weight-tablet;
+        }
+
         &--image {
             width:100%;
+            @include media-tablet{
+                padding: 16px 36px;
+                width:90%;
         }
+    }
+        
     }
     
 }
 .about__quote{
-    font-family: avenir;
+    font-family: avenir-demi;
     font-size: 14px;
     line-height: 22px;
     font-weight: 600;
     padding-bottom: 8px;
+
+    @include media-tablet{
+        font-family: avenir-demi;
+        font-size:$subheader-font-size-tablet ;
+        line-height: $subheader-line-height-tablet;
+        font-weight: $subheader-font-weight-tablet;
+        padding: 8px 36px;
+
+    } 
+}
+.about__author{
+    @include media-tablet{
+        font-family: avenir-demi;
+        font-size:$body-font-size-tablet;
+        line-height: $body-line-height-tablet;
+        font-weight: $body-font-weight-tablet;
+        padding-bottom: 40px;
+    }
 }
 .about__subtitle{
     font-family: avenir;
@@ -106,6 +172,14 @@ header{
     font-weight: 600;
     padding-bottom: 16px;
     padding-top: 8px;
+
+    @include media-tablet{
+        font-family: avenir-demi;
+        font-size:$subheader-font-size-tablet ;
+        line-height: $subheader-line-height-tablet;
+        font-weight: $subheader-font-weight-tablet;
+        padding: 8px 36px 36px 36px;
+    } 
 }
 .about__body{
     font-family: avenir;
@@ -113,8 +187,27 @@ header{
     line-height: 18px;
     font-weight: 400;
     padding-bottom: 16px;
-    color: $primaryBandsite
+    color: $primaryBandsite;
+
+    @include media-tablet{
+        font-family: avenir-demi;
+        font-size:  $body-font-size-tablet;
+        line-height: $body-line-height-tablet;
+        font-weight: $body-font-weight-tablet;
+    }
 }
+.about__paragraphs{
+    @include media-tablet{
+        display: flex;
+        column-gap: 36px;
+        padding: 0 36px;
+        font-size: $body-font-size-tablet;
+        line-height: $body-line-height-tablet;
+        font-weight: $body-font-weight-tablet;
+        color:$primaryBandsite;
+    }
+}
+
 .photogallery{
     margin:0;
     padding:0;

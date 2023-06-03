@@ -25,6 +25,19 @@
 header {
   background-color: #323232;
   color: #ffffff;
+  padding: 8px 0 0 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 24px 36px 0 36px;
+  }
 }
 
 .header__bandsite--logo {
@@ -34,11 +47,10 @@ header {
   padding-top: 8px;
   height: 3vh;
 }
-
-.header {
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
+@media (min-width: 768px) {
+  .header__bandsite--logo {
+    padding-right: 36px;
+  }
 }
 
 .nav {
@@ -57,6 +69,16 @@ header {
   border-bottom: 4px solid #ffffff;
   width: 50%;
 }
+@media (min-width: 768px) {
+  .nav__list {
+    padding-left: 36px;
+    padding-right: 36px;
+    font-family: avenir;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
 .nav__list--inactive {
   border-bottom: 4px solid #323232;
   width: 50%;
@@ -74,14 +96,29 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #323232 0.5;
 }
 .hero__title {
   padding-left: 16px;
+}
+@media (min-width: 768px) {
+  .hero__title {
+    font-family: avenir-bold;
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 700;
+    padding-left: 36px;
+  }
 }
 
 .about {
   margin: 0;
   padding: 16px;
+}
+@media (min-width: 768px) {
+  .about {
+    padding: 36px;
+  }
 }
 .about__title {
   font-size: 24px;
@@ -89,16 +126,50 @@ header {
   font-weight: 700;
   padding-bottom: 16px;
 }
+@media (min-width: 768px) {
+  .about__title {
+    padding-top: 12px;
+    font-family: avenir-bold;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+}
 .about__title--image {
   width: 100%;
 }
+@media (min-width: 768px) {
+  .about__title--image {
+    padding: 16px 36px;
+    width: 90%;
+  }
+}
 
 .about__quote {
-  font-family: avenir;
+  font-family: avenir-demi;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
   padding-bottom: 8px;
+}
+@media (min-width: 768px) {
+  .about__quote {
+    font-family: avenir-demi;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    padding: 8px 36px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__author {
+    font-family: avenir-demi;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    padding-bottom: 40px;
+  }
 }
 
 .about__subtitle {
@@ -109,6 +180,15 @@ header {
   padding-bottom: 16px;
   padding-top: 8px;
 }
+@media (min-width: 768px) {
+  .about__subtitle {
+    font-family: avenir-demi;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    padding: 8px 36px 36px 36px;
+  }
+}
 
 .about__body {
   font-family: avenir;
@@ -117,6 +197,27 @@ header {
   font-weight: 400;
   padding-bottom: 16px;
   color: #323232;
+}
+@media (min-width: 768px) {
+  .about__body {
+    font-family: avenir-demi;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__paragraphs {
+    display: flex;
+    -moz-column-gap: 36px;
+         column-gap: 36px;
+    padding: 0 36px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #323232;
+  }
 }
 
 .photogallery {
