@@ -401,3 +401,94 @@ header{
         padding: 18px 18px 18px 36px
     }
 }
+
+.comments{
+
+    &__title{
+    font-family: avenir-bold;
+        font-size: $section-font-size-mobile;
+        line-height: $section-line-height-mobile;
+        font-weight: $section-font-weight-mobile;
+        padding: 16px 16px 8px 16px;
+        color:$primaryBandsite;
+    }
+
+    &__container{
+        display: flex;
+        padding:12px;
+    }
+    &__imageprofile{
+        border-radius: 50%;
+        width:36px;
+        height: 36px;
+        padding: 12px;
+    }
+    &__input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding:0 12px
+    }
+    &__name{
+        display: flex;
+        flex-direction: column;
+        color: $primarySilver;
+        font-family: avenir-bold;
+        font-size: $label-font-size-mobile;
+        line-height: $label-line-height-mobile;
+        font-weight: $label-font-weight-mobile;
+        padding-top: 8px;
+
+        &--input{
+            font-family: avenir;
+            font-size: $subheader-font-size-mobile;
+            line-height: $subheader-line-height-mobile;
+            font-weight: $subheader-font-weight-mobile;
+            color: $primaryBandsite;
+            border-radius: 4px;
+            border: 1px, $primarySilver;
+            height: 36px;
+            background-color: $secondaryMercury;
+            padding-top: 4px;
+        }
+    }
+    &__comment{
+        display: flex;
+        flex-direction: column;
+        color: $primarySilver;
+        font-family: avenir-bold;
+        font-size: $label-font-size-mobile;
+        line-height: $label-line-height-mobile;
+        font-weight: $label-font-weight-mobile;
+        padding-top: 12px;
+
+        &--input{
+            font-family: avenir;
+            font-size: $subheader-font-size-mobile;
+            line-height: $subheader-line-height-mobile;
+            font-weight: $subheader-font-weight-mobile;
+            color: $primaryBandsite;
+            border-radius: 4px;
+            border: 1px, $primarySilver;
+            height: 108px;
+            background-color: $secondaryMercury;
+            padding-top: 4px;
+            justify-content: flex-start;
+        }
+    }
+    &__button{
+        padding-top: 16px;
+
+        &--press{
+            color:$primaryWhite;
+            background-color: $primaryBandsite;
+            width: 100%;
+            height: 36px;
+            font-family: avenir;
+            font-size: $subheader-font-size-mobile;
+            line-height: $subheader-line-height-mobile;
+            font-weight: $subheader-font-weight-mobile;
+        }
+    }
+
+}
