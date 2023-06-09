@@ -79,7 +79,10 @@ header{
         }
     }
 
-    // Header
+    // Header^^
+
+
+
     .footer{
         background-color: $primaryBandsite;
         color: $primaryWhite;
@@ -194,4 +197,74 @@ header{
             padding: 18px 18px 18px 36px
         }
     }
-    // footer
+    // footer^
+
+
+    .shows{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    
+        &__title{
+            font-family: avernir-bold;
+            font-size: $section-font-size-mobile;
+            font-weight: $section-font-weight-mobile;
+            line-height: $section-line-height-mobile;
+        }
+
+        &__list{
+            list-style-type: none;
+            padding-bottom: 16px;
+        }
+
+        &__showcard{
+            display: flex;
+            flex-direction: column;
+            color:$primarySilver;
+            font-family: avenir-bold;
+            font-size: $label-font-size-mobile;
+            line-height: $label-line-height-mobile;
+            font-weight: $label-font-weight-mobile;
+            border: 10px black;
+        }
+
+        &__date{
+            color:$primaryBandsite;
+            font-family: avenir-demi;
+            font-size: $subheader-font-size-mobile;
+            line-height: $subheader-line-height-mobile;
+            font-weight: $subheader-font-weight-mobile;
+        }
+
+        &__venue{
+            color:$primaryBandsite;
+            font-family: avenir;
+            font-size: $body-font-size-mobile;
+            line-height: $body-line-height-mobile;
+            font-weight: $body-font-weight-mobile;
+        }
+
+        &__location{
+            color:$primaryBandsite;
+            font-family: avenir;
+            font-size: $body-font-size-mobile;
+            line-height: $body-line-height-mobile;
+            font-weight: $body-font-weight-mobile;
+        }
+
+        &__tickets{
+                color:$primaryWhite;
+                background-color: $primaryBandsite;
+                font-family: avenir;
+                font-size: $subheader-font-size-mobile;
+                line-height: $subheader-line-height-mobile;
+                font-weight: $subheader-font-weight-mobile;
+                padding: 4px;
+                border-radius: 4px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+        }
+    

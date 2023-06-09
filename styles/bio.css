@@ -217,6 +217,17 @@ header {
   }
 }
 
+.shows {
+  display: flex;
+  flex-direction: column;
+}
+.shows__title {
+  font-family: avernir-bold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
 * {
   margin: 0;
   padding: 0;
