@@ -1,0 +1,75 @@
+@use "./typography" as *;
+@use "./breakpoints" as *;
+@use "./colours" as *;
+
+header{
+    background-color: $primaryBandsite;
+    color: $primaryWhite;
+    padding: 8px 0 0 0;
+    font-family: avenir-bold;
+    font-size: $section-font-size-mobile;
+    line-height: $section-line-height-mobile;
+    font-weight: $section-font-weight-mobile;
+
+    @include media-tablet{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 24px 36px 0 36px;
+        
+    }
+
+    @include media-desktop{
+        padding: 48px 0 0 8%;
+        align-items: baseline;
+    }
+}
+.header__bandsite--logo {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    height: 3vh;
+
+    @include media-tablet{
+        padding-right: 36px;
+    }
+
+    @include media-desktop{
+        height:20px
+    }
+}
+
+.nav{
+    display: flex;
+
+    &__list{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        font-family: avenir-demi;
+        font-size: $subheader-font-size-mobile;
+        line-height: $subheader-line-height-mobile;
+        font-weight: $subheader-font-weight-mobile;
+        padding-bottom: 8px;
+    
+        &--active {
+            border-bottom: 4px solid $primaryWhite;
+            width: 50%;
+        }
+        @include media-tablet{
+            padding-left: 36px;
+            padding-right: 36px;
+            font-family: avenir;
+            font-size: $subheader-font-size-tablet;
+            line-height: $subheader-line-height-tablet;
+            font-weight: $subheader-font-weight-tablet;
+    
+    }
+    }
+        &__list--inactive {
+            border-bottom: 4px solid $primaryBandsite;
+            width: 50%;
+            color:$primaryWhite;
+            text-decoration: none;
+        }
+    }

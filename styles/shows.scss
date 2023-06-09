@@ -1,6 +1,8 @@
 @use "./partials/typography" as *;
 @use "./partials/breakpoints" as *;
 @use "./partials/colours" as *;
+@use "./partials/footer" as *;
+@use "./partials/header" as *;
 
 
 * {
@@ -9,197 +11,6 @@
     font-family: avenir;
     
 }
-header{
-    background-color: $primaryBandsite;
-    color: $primaryWhite;
-    padding: 8px 0 0 0;
-    font-family: avenir-bold;
-    font-size: $section-font-size-mobile;
-    line-height: $section-line-height-mobile;
-    font-weight: $section-font-weight-mobile;
-
-    @include media-tablet{
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 24px 36px 0 36px;
-        
-    }
-
-    @include media-desktop{
-        padding: 48px 0 0 8%;
-        align-items: baseline;
-    }
-}
-.header__bandsite--logo {
-    display: flex;
-    justify-content: center;
-    padding: 8px 0;
-    height: 3vh;
-
-    @include media-tablet{
-        padding-right: 36px;
-    }
-
-    @include media-desktop{
-        height:20px
-    }
-}
-
-.nav{
-    display: flex;
-
-    &__list{
-        display: flex;
-        list-style-type: none;
-        justify-content: center;
-        font-family: avenir-demi;
-        font-size: $subheader-font-size-mobile;
-        line-height: $subheader-line-height-mobile;
-        font-weight: $subheader-font-weight-mobile;
-        padding-bottom: 8px;
-    
-        &--active {
-            border-bottom: 4px solid $primaryWhite;
-            width: 50%;
-        }
-        @include media-tablet{
-            padding-left: 36px;
-            padding-right: 36px;
-            font-family: avenir;
-            font-size: $subheader-font-size-tablet;
-            line-height: $subheader-line-height-tablet;
-            font-weight: $subheader-font-weight-tablet;
-    
-    }
-    }
-        &__list--inactive {
-            border-bottom: 4px solid $primaryBandsite;
-            width: 50%;
-            color:$primaryWhite;
-            text-decoration: none;
-        }
-    }
-
-    // Header^^
-
-
-
-    .footer{
-        background-color: $primaryBandsite;
-        color: $primaryWhite;
-        
-        @include media-tablet{
-            padding:36px;
-        }
-    
-        &__title{
-            font-family: avenir-bold;
-            font-size: $section-font-size-mobile;
-            line-height: $section-line-height-mobile;
-            font-weight: $section-font-weight-mobile;
-            padding: 16px 8px 8px 16px;
-        
-            @include media-tablet{
-                font-family: avenir-bold;
-                font-size:$section-font-size-tablet;
-                line-height:$section-line-height-tablet;
-                font-weight: $section-font-weight-tablet;
-            }
-        }
-    
-        &__subheader{
-            font-family: avenir-bold;
-            font-size: $footer-font-size-mobile;
-            line-height: $footer-line-height-mobile;
-            font-weight: $footer-font-weight-mobile;
-            padding: 8px 8px 8px 16px;
-    
-            @include media-tablet{
-                font-family: avenir-bold;
-                font-size: $footer-font-size-tablet;
-                line-height: $footer-line-height-tablet;
-                font-weight: $footer-font-weight-tablet;
-            }
-        }
-        &__text{
-            font-family: avenir;
-            font-size: $footer-font-size-mobile;
-            line-height: $footer-line-height-mobile;
-            font-weight: $footer-font-weight-mobile;
-            padding: 8px 8px 8px 16px;
-    
-            @include media-tablet{
-                font-family: avenir;
-                font-size: $footer-font-size-tablet;
-                line-height: $footer-line-height-tablet;
-                font-weight: $footer-font-weight-tablet;
-            }
-        }
-        &__email{
-            font-family: avenir;
-            font-size: $footer-font-size-mobile;
-            line-height: $footer-line-height-mobile;
-            font-weight: $footer-font-weight-mobile;
-            padding: 8px 8px 16px 16px;
-    
-            @include media-tablet{
-                font-family: avenir;
-                font-size: $footer-font-size-tablet;
-                line-height: $footer-line-height-tablet;
-                font-weight: $footer-font-weight-tablet;
-            }
-        }
-        &__bandsite--logo{
-            padding: 16px 8px 8px 16px;
-    
-            @include media-tablet{
-                position: relative;
-                bottom: 200px; 
-                left: 80%;
-            }// I am not sure if this is the best way to do this?
-            // }
-        }
-        &__text--label{
-            font-family: avenir;
-            font-size: $label-font-size-mobile;
-            line-height: $label-line-height-mobile;
-            font-weight: $label-font-weight-mobile;
-            padding: 0 0 16px 16px;
-    
-            @include media-tablet{
-                font-family: avenir;
-                font-size: $label-font-size-tablet;
-                line-height: $label-line-height-tablet;
-                font-weight: $label-font-weight-tablet;
-            }
-        }
-        &__contacts{
-            list-style-type: none;
-    
-            @include media-tablet{
-                display: flex;
-            }
-        }
-        &__top{
-    
-            @include media-tablet{
-                display: flex;
-                align-items: baseline;
-            }
-        }
-    }
-    .address{
-        font-style: italic;
-    }
-    
-    .socialicon{
-        padding: 8px 8px 8px 16px; 
-        @include media-tablet {
-            padding: 18px 18px 18px 36px
-        }
-    }
-    // footer^
 
     .hero{
         background-image: url(../assets/Images/hero-shows.jpg);
@@ -326,7 +137,10 @@ header{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                
             }
-        }
-    asdfjskdjfnsdjnvsdvsdvc
+        
+    
+        &__table{
+            display: none;
+     } 
+    }
