@@ -226,6 +226,11 @@ header {
   height: 50vh;
   background-color: #323232 0.5;
 }
+@media (min-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+}
 .hero__album {
   font-family: avenir-demi;
   font-weight: 600;
@@ -233,6 +238,15 @@ header {
   line-height: 22px;
   color: #ffffff;
   padding: 32px 0 16px 16px;
+}
+@media (min-width: 768px) {
+  .hero__album {
+    padding: 36px;
+    font-family: avenir-demi;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
 }
 .hero__song {
   font-family: avenir-bold;
@@ -242,16 +256,37 @@ header {
   color: #ffffff;
   padding: 16px 0 16px 16px;
 }
+@media (min-width: 768px) {
+  .hero__song {
+    padding: 36px;
+    font-family: avenir-bold;
+    font-size: 60px;
+    line-height: 68px;
+    font-weight: 700;
+    width: 70%;
+  }
+}
 .hero__soundcloud {
   width: 90%;
   height: 50%;
   padding: 16px 16px 32px 16px;
+}
+@media (min-width: 768px) {
+  .hero__soundcloud {
+    width: 55%;
+    padding: 36px;
+  }
 }
 
 .shows {
   display: flex;
   flex-direction: column;
   padding: 16px;
+}
+@media (min-width: 768px) {
+  .shows {
+    padding: 36px;
+  }
 }
 .shows__title {
   font-family: avernir-bold;
