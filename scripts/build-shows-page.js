@@ -62,7 +62,7 @@ const generateList = () => {
     listItemEl.classList.add("shows__showcard");
 
     for (let ii = 0; ii < labels.length; ii++) {
-      let labelEl = document.createElement("span");
+      let labelEl = document.createElement("div");
       labelEl.innerText = labels[ii];
 
       let valueEl = document.createElement("span");
