@@ -72,12 +72,14 @@ header{
             font-weight: $subheader-font-weight-tablet;
     
     }
-    }
-        &__list--inactive {
-            border-bottom: 4px solid $primaryBandsite;
-            width: 50%;
-        }
-    }
+     &--inactive  {
+                border-bottom: 4px solid $primaryBandsite;
+                width: 50%;
+                color:$primaryWhite;
+                text-decoration: none;
+    }           
+}
+}
 
 
 .hero{

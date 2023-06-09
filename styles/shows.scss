@@ -76,6 +76,8 @@ header{
         &__list--inactive {
             border-bottom: 4px solid $primaryBandsite;
             width: 50%;
+            color:$primaryWhite;
+            text-decoration: none;
         }
     }
 
@@ -198,6 +200,39 @@ header{
         }
     }
     // footer^
+
+    .hero{
+        background-image: url(../assets/Images/hero-shows.jpg);
+        background-size:cover;
+        background-position:center;
+        height: 50vh;
+        background-color: $primaryBandsite 0.5;
+       
+        &__album{
+            font-family:avenir-demi;
+            font-weight: $subheader-font-weight-mobile;
+            font-size: $subheader-font-size-mobile;
+            line-height: $subheader-line-height-mobile;
+            color: $primaryWhite;
+            padding:32px 0 16px 16px
+        }
+
+        &__song{
+            font-family:avenir-bold;
+            font-weight: $section-font-weight-mobile;
+            font-size: $section-font-size-mobile;
+            line-height: $section-line-height-mobile;
+            color: $primaryWhite;
+            padding:16px 0 16px 16px
+        }
+
+        &__soundcloud{
+            width:90%;
+            height: 50%;
+            padding:16px 16px 32px 16px;
+            
+        }
+    }
 
 
     .shows{

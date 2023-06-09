@@ -220,12 +220,61 @@ header {
 .shows {
   display: flex;
   flex-direction: column;
+  padding: 16px;
 }
 .shows__title {
   font-family: avernir-bold;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+}
+.shows__list {
+  list-style-type: none;
+  padding-bottom: 16px;
+}
+.shows__showcard {
+  display: flex;
+  flex-direction: column;
+  color: #AFAFAF;
+  font-family: avenir-bold;
+  font-size: 10px;
+  line-height: 20px;
+  font-weight: 700;
+  border: 10px black;
+}
+.shows__date {
+  color: #323232;
+  font-family: avenir-demi;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.shows__venue {
+  color: #323232;
+  font-family: avenir;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.shows__location {
+  color: #323232;
+  font-family: avenir;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.shows__tickets {
+  color: #ffffff;
+  background-color: #323232;
+  font-family: avenir;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 * {
@@ -305,6 +354,8 @@ header {
 .nav__list--inactive {
   border-bottom: 4px solid #323232;
   width: 50%;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .hero {
