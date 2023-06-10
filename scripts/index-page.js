@@ -1,9 +1,9 @@
 const comments = [
   {
-    name: "Miles Acosta",
-    date: "12/20/2020",
+    name: "Connor Walton",
+    date: "02/17/2021",
     comment:
-      "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
+      "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
   },
   {
     name: "Emilie Beach",
@@ -12,17 +12,17 @@ const comments = [
       "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
   },
   {
-    name: "Connor Walton",
-    date: "02/17/2021",
+    name: "Miles Acosta",
+    date: "12/20/2020",
     comment:
-      "This is art. This is inexplicable magic expressed in the purest way, everything that makes up this majestic work deserves reverence. Let us appreciate this for what it is and what it contains.",
+      "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
   },
 ];
 
 let commentsEl = document.querySelector(".comments");
 
 let commentsListEl = document.createElement("ul");
-commentsListEl.classList.add("comment__list");
+commentsListEl.classList.add("comments__list");
 
 commentsEl.appendChild(commentsListEl);
 
@@ -30,22 +30,28 @@ commentsEl.appendChild(commentsListEl);
 // ===========
 // ===========
 
+const commentsMax = 3;
+
 const generateList = () => {
+  commentsListEl.innerHTML = "";
+
+  const commentsDisplay = comments.slice(0, commentsMax);
+
   for (let i = 0; i < comments.length; i++) {
-    let activeComment = comments[i];
+    let activeComment = commentsDisplay[i];
 
     let commentsItemEl = document.createElement("li");
     commentsItemEl.classList.add("comments__active");
 
-    let nameEl = document.createElement("span");
-    nameEl.classList.add("comments__active--header", "comments__active--name");
+    let nameEl = document.createElement("div");
+    nameEl.classList.add("comments__active--name");
     nameEl.innerText = activeComment.name;
 
-    let dateEl = document.createElement("span");
-    dateEl.classList.add("comments__active--header", "comments__active--date");
+    let dateEl = document.createElement("div");
+    dateEl.classList.add("comments__active--date");
     dateEl.innerText = activeComment.date;
 
-    let commentEl = document.createElement("span");
+    let commentEl = document.createElement("div");
     commentEl.classList.add("comments__active--comment");
     commentEl.innerText = activeComment.comment;
 
@@ -58,3 +64,36 @@ const generateList = () => {
 };
 
 generateList();
+
+// ==========
+// ==========
+// ===========
+
+const commentsButton = document.querySelector(".comments__button--press");
+commentsButton.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const commentsNameInput = document.querySelector(".comments__name--input");
+  const commentsCommentInput = document.querySelector(
+    ".comments__comment--input"
+  );
+
+  const newComment = {
+    name: commentsNameInput.value,
+    date: "",
+    comment: commentsCommentInput.value,
+  };
+
+  const currentDate = new Date();
+  const formattedDate = currentDate.toLocaleDateString();
+  comments[0].date = formattedDate;
+
+  newComment.date = formattedDate;
+
+  comments.unshift(newComment);
+
+  generateList();
+
+  commentsNameInput.value = "";
+  commentsCommentInput.value = "";
+});

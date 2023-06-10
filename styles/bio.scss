@@ -312,32 +312,50 @@
         }
     }
 
+    &__list{
+        padding:16px;
+    }
+
     &__active
     {
         display: flex;
-        justify-content: flex-start;
+        // justify-content: flex-start;
         flex-direction: column;
-
-        &--header{
-            display: flex;
-            flex-direction: row;
-        }
+        padding: 16px;
+    
     
         &--name{
+            font-family: avenir-bold;
+            font-size: $subheader-font-size-mobile;
+            line-height: $subheader-line-height-mobile;
+            font-weight: $subheader-font-weight-mobile;
             
         }
 
         &--date{
-
+            font-family: avenir;
+            font-size: $subheader-font-size-mobile;
+            line-height: $subheader-line-height-mobile;
+            font-weight: $subheader-font-weight-mobile;
+            color:$primarySilver
         }
 
         &--comment{
-
+            font-family: avenir;
+            font-size: $body-font-size-mobile;
+            line-height: $body-line-height-mobile;
+            font-weight: $body-font-weight-mobile;
         }
-    
     }
 
-
+    &__imageprofile--grey{
+        padding:0;
+        width:36px ;
+        height: 36px ;
+        border-radius: 50%;
+        background-color: $secondaryMercury;
+        // margin: ;
+    }
 
 
 }

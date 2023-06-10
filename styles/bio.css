@@ -784,12 +784,37 @@ header {
   line-height: 22px;
   font-weight: 600;
 }
+.comments__list {
+  padding: 16px;
+}
 .comments__active {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  padding: 16px;
 }
-.comments__active--header {
-  display: flex;
-  flex-direction: row;
+.comments__active--name {
+  font-family: avenir-bold;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.comments__active--date {
+  font-family: avenir;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #AFAFAF;
+}
+.comments__active--comment {
+  font-family: avenir;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.comments__imageprofile--grey {
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #E1E1E1;
 }/*# sourceMappingURL=bio.css.map */
