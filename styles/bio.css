@@ -233,7 +233,14 @@ header {
 }
 @media (min-width: 768px) {
   .hero {
-    height: 70vh;
+    height: 60vh;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: 15rem;
+    height: 60vh;
+    display: flex;
   }
 }
 .hero__album {
@@ -282,6 +289,21 @@ header {
     padding: 36px;
   }
 }
+@media (min-width: 1280px) {
+  .hero__soundcloud {
+    height: 25%;
+    width: 75%;
+    padding-top: 7rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    width: 130%;
+  }
+}
 
 .shows {
   display: flex;
@@ -307,6 +329,11 @@ header {
     line-height: 44px;
   }
 }
+@media (min-width: 1280px) {
+  .shows__title {
+    padding-left: 5rem;
+  }
+}
 .shows__list {
   list-style-type: none;
   padding-bottom: 16px;
@@ -329,6 +356,14 @@ header {
     padding: 1rem 1rem;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__showcard {
+    position: relative;
+    left: 20rem;
+    bottom: 5rem;
+    width: 70%;
   }
 }
 .shows__showcard span {
@@ -407,6 +442,14 @@ header {
   }
   .shows__table li {
     flex: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__table {
+    position: relative;
+    left: 20rem;
+    bottom: 5rem;
+    width: 70%;
   }
 }
 .shows__table--date {
@@ -740,4 +783,13 @@ header {
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
+}
+.comments__active {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.comments__active--header {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=bio.css.map */

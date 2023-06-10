@@ -312,4 +312,32 @@
         }
     }
 
+    &__active
+    {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        &--header{
+            display: flex;
+            flex-direction: row;
+        }
+    
+        &--name{
+            
+        }
+
+        &--date{
+
+        }
+
+        &--comment{
+
+        }
+    
+    }
+
+
+
+
 }
