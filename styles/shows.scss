@@ -18,11 +18,18 @@
         background-position:center;
         height: 50vh;
         background-color: $primaryBandsite 0.5;
+
         @include media-tablet {
-            height:70vh
+            height:60vh
         }
 
-       
+        @include media-desktop {
+            padding-top: 15rem;
+            height: 60vh;
+            display: flex;
+
+        }
+
         &__album{
             font-family:avenir-demi;
             font-weight: $subheader-font-weight-mobile;
@@ -40,6 +47,11 @@
             }
         }
 
+        // @include media-desktop{
+        //     // display: flex;
+        //     // justify-content: space-evenly;
+        // }
+
         &__song{
             font-family:avenir-bold;
             font-weight: $header-font-weight-mobile;
@@ -56,7 +68,10 @@
                 font-weight: $header-font-weight-tablet;
                 width: 70%;
             }
+
+            
         }
+        
 
         &__soundcloud{
             width:90%;
@@ -66,6 +81,20 @@
             @include media-tablet {
                 width:55%;
                 padding: 36px;
+            }
+            @include media-desktop{
+                height:25%;
+                width:75%;
+                padding-top: 7rem;
+            }
+        }
+
+        &__text{
+            @include media-desktop{
+                display: flex;
+                flex-direction: column;
+                padding-left: 8rem;
+                width:130%;
             }
         }
     }
@@ -105,18 +134,19 @@
             font-size: $label-font-size-mobile;
             line-height: $label-line-height-mobile;
             font-weight: $label-font-weight-mobile;
-            border: 10px black;
+            padding-bottom: 16px;
+            border-bottom: 1px solid $secondaryMercury;
 
             @include media-tablet{
                 flex-direction: row;
                 font-size: 0;
-                padding: 1rem 0;
+                padding: 1rem 1rem;
                 justify-content: space-between;
                 align-items: center;
             }
             span{
                 flex: 1;
-                // text-align: center;
+        
             }
        
         }
@@ -191,7 +221,7 @@
             @include media-tablet{
                 display: flex;
                 list-style-type: none;
-                justify-content: space-evenly;
+                justify-content: space-around;
                 padding-left: 1rem;
 
                 li{
@@ -199,14 +229,36 @@
                 }
             }
             
-            &--title{
-                padding: 16px 15rem 16px 0;
+            &--date{
+                padding: 16px 0;
                 color: $primarySilver;
                 font-family: avenir;
                 font-weight: $label-font-weight-tablet;
                 line-height: $label-line-height-tablet;
                 font-size: $label-font-size-tablet;
             }
+            &--venue{
+                padding: 16px 0;
+                color: $primarySilver;
+                font-family: avenir;
+                font-weight: $label-font-weight-tablet;
+                line-height: $label-line-height-tablet;
+                font-size: $label-font-size-tablet;
+                position: relative;
+                right: 5rem;
+            }
+            &--location{
+                padding: 16px 0;
+                color: $primarySilver;
+                font-family: avenir;
+                font-weight: $label-font-weight-tablet;
+                line-height: $label-line-height-tablet;
+                font-size: $label-font-size-tablet;
+                position: relative;
+                right: 10rem;
+            }
+
+
 
      } 
     }

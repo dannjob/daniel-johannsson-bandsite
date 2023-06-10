@@ -206,6 +206,11 @@ header {
     font-weight: 600;
   }
 }
+@media (min-width: 1280px) {
+  .nav__list {
+    padding-bottom: 2rem;
+  }
+}
 .nav__list--inactive {
   border-bottom: 4px solid #323232;
   width: 50%;
@@ -294,6 +299,14 @@ header {
   font-weight: 700;
   line-height: 32px;
 }
+@media (min-width: 768px) {
+  .shows__title {
+    padding: 1rem;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+}
 .shows__list {
   list-style-type: none;
   padding-bottom: 16px;
@@ -306,7 +319,20 @@ header {
   font-size: 10px;
   line-height: 20px;
   font-weight: 700;
-  border: 10px black;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E1E1E1;
+}
+@media (min-width: 768px) {
+  .shows__showcard {
+    flex-direction: row;
+    font-size: 0;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.shows__showcard span {
+  flex: 1;
 }
 .shows__date {
   color: #323232;
@@ -315,6 +341,14 @@ header {
   line-height: 22px;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .shows__date {
+    font-family: avenir-demi;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
 .shows__venue {
   color: #323232;
   font-family: avenir;
@@ -322,12 +356,28 @@ header {
   line-height: 18px;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  .shows__venue {
+    font-family: avenir;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
 .shows__location {
   color: #323232;
   font-family: avenir;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+}
+@media (min-width: 768px) {
+  .shows__location {
+    font-family: avenir;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
 }
 .shows__tickets {
   color: #ffffff;
@@ -344,6 +394,48 @@ header {
 }
 .shows__table {
   display: none;
+}
+.shows__table--tickets {
+  display: none;
+}
+@media (min-width: 768px) {
+  .shows__table {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-left: 1rem;
+  }
+  .shows__table li {
+    flex: 1;
+  }
+}
+.shows__table--date {
+  padding: 16px 0;
+  color: #AFAFAF;
+  font-family: avenir;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 12px;
+}
+.shows__table--venue {
+  padding: 16px 0;
+  color: #AFAFAF;
+  font-family: avenir;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 12px;
+  position: relative;
+  right: 5rem;
+}
+.shows__table--location {
+  padding: 16px 0;
+  color: #AFAFAF;
+  font-family: avenir;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 12px;
+  position: relative;
+  right: 10rem;
 }
 
 * {
