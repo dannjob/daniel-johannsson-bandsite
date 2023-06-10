@@ -329,6 +329,11 @@ header {
     line-height: 44px;
   }
 }
+@media (min-width: 1280px) {
+  .shows__title {
+    padding-left: 5rem;
+  }
+}
 .shows__list {
   list-style-type: none;
   padding-bottom: 16px;
@@ -351,6 +356,14 @@ header {
     padding: 1rem 1rem;
     justify-content: space-between;
     align-items: center;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__showcard {
+    position: relative;
+    left: 20rem;
+    bottom: 5rem;
+    width: 70%;
   }
 }
 .shows__showcard span {
@@ -429,6 +442,14 @@ header {
   }
   .shows__table li {
     flex: 1;
+  }
+}
+@media (min-width: 1280px) {
+  .shows__table {
+    position: relative;
+    left: 20rem;
+    bottom: 5rem;
+    width: 70%;
   }
 }
 .shows__table--date {

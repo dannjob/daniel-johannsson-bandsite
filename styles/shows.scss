@@ -106,6 +106,7 @@
         @include media-tablet{
             padding: 36px;
         }
+
     
         &__title{
             font-family: avernir-bold;
@@ -118,6 +119,10 @@
                 font-size: $section-font-size-tablet;
                 font-weight: $section-font-weight-tablet;
                 line-height: $section-line-height-tablet;
+            }
+
+            @include media-desktop{
+               padding-left: 5rem;
             }
         }
 
@@ -144,9 +149,15 @@
                 justify-content: space-between;
                 align-items: center;
             }
+
+            @include media-desktop{
+                position: relative;
+                left: 20rem;
+                bottom: 5rem;
+                width: 70%
+            }
             span{
                 flex: 1;
-        
             }
        
         }
@@ -224,11 +235,19 @@
                 justify-content: space-around;
                 padding-left: 1rem;
 
+
                 li{
                     flex:1; 
                 }
             }
             
+            @include media-desktop{
+                position: relative;
+                left: 20rem;
+                bottom: 5rem;
+                width: 70%;
+            }
+
             &--date{
                 padding: 16px 0;
                 color: $primarySilver;
