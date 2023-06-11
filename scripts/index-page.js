@@ -88,27 +88,53 @@ const commentsButton = document.querySelector(".comments__button--press");
 commentsButton.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const commentsNameInput = document.querySelector(".comments__name--input");
+  let commentsNameInput = document.querySelector(".comments__name--input");
   const commentsCommentInput = document.querySelector(
     ".comments__comment--input"
   );
 
-  const newComment = {
-    name: commentsNameInput.value,
-    date: "",
-    comment: commentsCommentInput.value,
-  };
+  if (commentsNameInput.value && commentsCommentInput.value) {
+    const newComment = {
+      name: commentsNameInput.value,
+      date: "",
+      comment: commentsCommentInput.value,
+    };
 
-  const currentDate = new Date();
-  const formattedDate = currentDate.toLocaleDateString();
-  comments[0].date = formattedDate;
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleDateString();
+    comments[0].date = formattedDate;
 
-  newComment.date = formattedDate;
+    newComment.date = formattedDate;
 
-  comments.unshift(newComment);
+    comments.unshift(newComment);
 
-  displayComment();
+    displayComment();
 
-  commentsNameInput.value = "";
-  commentsCommentInput.value = "";
+    commentsNameInput.value = "";
+    commentsCommentInput.value = "";
+  } else {
+    if (!commentsNameInput.value) {
+      commentsNameInput.style.border = "#D22D2D 1px solid";
+    } else {
+      commentsNameInput.style.border = "none";
+    }
+
+    if (!commentsCommentInput.value) {
+      commentsCommentInput.style.border = "#D22D2D 1px solid";
+    } else {
+      commentsCommentInput.style.border = "none";
+    }
+  }
+});
+
+const commentsNameInput = document.querySelector(".comments__name--input");
+commentsNameInput.addEventListener("focus", () => {
+  commentsNameInput.style.border = "1px solid #323232";
+});
+
+const commentsCommentInput = document.querySelector(
+  ".comments__comment--input"
+);
+commentsCommentInput.addEventListener("focus", () => {
+  commentsCommentInput.style.border = "1px solid #323232";
 });

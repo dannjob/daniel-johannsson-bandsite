@@ -310,6 +310,8 @@
             background-color: $secondaryAlabaster;
             padding-top: 4px;
 
+
+
             @include media-tablet{
                 font-size: $subheader-font-size-tablet;
                 line-height: $subheader-line-height-tablet;
@@ -326,6 +328,7 @@
         line-height: $body-line-height-mobile;
         font-weight: $body-font-weight-mobile;
         padding-top: 12px;
+
 
         @include media-tablet{
             font-size: $body-font-size-tablet;
@@ -347,6 +350,7 @@
             background-color: $secondaryAlabaster;
             padding-top: 4px;
             justify-content: flex-start;
+
 
             @include media-tablet {
                 font-size: $subheader-font-size-tablet;

@@ -447,7 +447,7 @@ header {
   flex-direction: row;
   justify-content: center;
 }
-.shows__tickets :hover {
+.shows__tickets:hover {
   background-color: #000000 !important;
 }
 .shows__table {
