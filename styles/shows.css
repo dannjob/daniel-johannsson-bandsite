@@ -233,12 +233,27 @@ header {
   background-image: url(../assets/Images/hero-shows.jpg);
   background-size: cover;
   background-position: center;
-  background-color: #323232 0.5;
+  list-style: none;
+}
+@media (min-width: 1280px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+  }
 }
 .hero__overlay {
   width: 100%;
   background-color: rgba(50, 50, 50, 0.5);
   z-index: 2;
+}
+@media (min-width: 1280px) {
+  .hero__text--container {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0 10rem 10rem;
+  }
 }
 .hero__text {
   width: 35%;
@@ -278,6 +293,11 @@ header {
     width: 70%;
   }
 }
+@media (min-width: 1280px) {
+  .hero__song {
+    width: 75%;
+  }
+}
 .hero__soundcloud {
   width: 90%;
   height: 50%;
@@ -292,16 +312,10 @@ header {
 @media (min-width: 1280px) {
   .hero__soundcloud {
     height: 25%;
-    width: 75%;
-    padding-top: 7rem;
-  }
-}
-@media (min-width: 1280px) {
-  .hero__text {
-    display: flex;
-    flex-direction: column;
-    padding-left: 8rem;
-    width: 130%;
+    width: 100%;
+    padding: 10rem 0 10rem 10rem;
+    position: relative;
+    right: 20rem;
   }
 }
 

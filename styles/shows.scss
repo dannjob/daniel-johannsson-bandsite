@@ -16,16 +16,34 @@
         background-image: url(../assets/Images/hero-shows.jpg);
         background-size:cover;
         background-position:center;
-        background-color: $primaryBandsite 0.5;
+        list-style: none;
+        
 
+        @include media-desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: baseline;
+            align-items: center;
+        }
+        
         &__overlay{
             width: 100%;
             background-color: rgba(50,50,50,.5);
             z-index: 2;
         }
         
+        &__text--container{
+
+            @include media-desktop{
+                display: flex;
+                flex-direction: column;
+                padding: 10rem 0 10rem 10rem;
+            }
+        }
+
         &__text{
             width: 35%;
+    
         }
 
         &__album{
@@ -62,6 +80,10 @@
                 font-weight: $header-font-weight-tablet;
                 width: 70%;
             }    
+
+            @include media-desktop {
+                width: 75%;
+            }
         }
         
 
@@ -76,19 +98,13 @@
             }
             @include media-desktop{
                 height:25%;
-                width:75%;
-                padding-top: 7rem;
+                width:100%; 
+                padding:10rem 0 10rem 10rem;
+                position:relative;
+                right:20rem;
             }
         }
-
-        &__text{
-            @include media-desktop{
-                display: flex;
-                flex-direction: column;
-                padding-left: 8rem;
-                width:130%;
-            }
-        }
+        
     }
     .shows{
         display: flex;
