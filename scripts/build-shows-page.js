@@ -73,6 +73,11 @@ const generateList = () => {
       listItemEl.appendChild(valueEl);
     }
 
+    let ticketsButton = listItemEl.querySelector(".shows__tickets");
+    ticketsButton.addEventListener("click", function () {
+      listItemEl.style.backgroundColor = "#E1E1E1";
+    });
+
     showsListEl.appendChild(listItemEl);
   }
 };
