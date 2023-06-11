@@ -786,11 +786,32 @@ header {
 }
 .comments__list {
   padding: 16px;
+  list-style: none;
 }
 .comments__active {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: row;
   padding: 16px;
+}
+.comments__active--commentor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  left: 36px;
+  width: 90%;
+}
+.comments__active--commentor-meta {
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+}
+.comments__active--img {
+  background-color: #E1E1E1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 }
 .comments__active--name {
   font-family: avenir-bold;
@@ -810,11 +831,4 @@ header {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-}
-.comments__imageprofile--grey {
-  padding: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #E1E1E1;
 }/*# sourceMappingURL=bio.css.map */

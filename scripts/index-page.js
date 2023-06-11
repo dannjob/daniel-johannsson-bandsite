@@ -43,6 +43,16 @@ function displayComment() {
     let commentsItemEl = document.createElement("li");
     commentsItemEl.classList.add("comments__active");
 
+    let commentorEl = document.createElement("div");
+    commentorEl.classList.add("comments__active--commentor");
+
+    let commentorMetaEl = document.createElement("div");
+    commentorMetaEl.classList.add("comments__active--commentor-meta");
+
+    let imgEl = document.createElement("ul");
+    imgEl.classList.add("comments__active--img");
+    imgEl.src = "";
+
     let nameEl = document.createElement("ul");
     nameEl.classList.add("comments__active--name");
     nameEl.innerText = activeComment.name;
@@ -55,9 +65,14 @@ function displayComment() {
     commentEl.classList.add("comments__active--comment");
     commentEl.innerText = activeComment.comment;
 
-    commentsItemEl.appendChild(nameEl);
-    commentsItemEl.appendChild(dateEl);
-    commentsItemEl.appendChild(commentEl);
+    commentsItemEl.appendChild(imgEl);
+
+    commentsItemEl.appendChild(commentorEl);
+    commentorEl.appendChild(commentorMetaEl);
+
+    commentorMetaEl.appendChild(nameEl);
+    commentorMetaEl.appendChild(dateEl);
+    commentorEl.appendChild(commentEl);
 
     commentsListEl.appendChild(commentsItemEl);
   }

@@ -314,15 +314,40 @@
 
     &__list{
         padding:16px;
+        list-style: none;
     }
 
     &__active
     {
         display: flex;
-        // justify-content: flex-start;
-        flex-direction: column;
+        justify-content: flex-start;
+        flex-direction: row;
         padding: 16px;
+
+        &--commentor{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            left: 36px;
+            width: 90%;
+
+            &-meta{
+                display: flex;
+                flex: row;
+                justify-content: space-between;
+        }
+        }
     
+       
+        &--img{
+            background-color: $secondaryMercury;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            
+        }
+
     
         &--name{
             font-family: avenir-bold;
@@ -345,16 +370,8 @@
             font-size: $body-font-size-mobile;
             line-height: $body-line-height-mobile;
             font-weight: $body-font-weight-mobile;
+            
         }
-    }
-
-    &__imageprofile--grey{
-        padding:0;
-        width:36px ;
-        height: 36px ;
-        border-radius: 50%;
-        background-color: $secondaryMercury;
-        // margin: ;
     }
 
 
