@@ -214,8 +214,13 @@ header {
 .nav__list--inactive {
   border-bottom: 4px solid #323232;
   width: 50%;
-  color: #ffffff;
+  color: #AFAFAF;
   text-decoration: none;
+}
+.nav__list--inactive:hover {
+  font-family: avenir;
+  border-bottom: 4px solid #ffffff;
+  color: #ffffff;
 }
 
 * {
@@ -516,6 +521,7 @@ header {
 }
 @media (min-width: 1280px) {
   .hero {
+    padding-top: 0;
     height: 50vh;
     width: 100%;
   }
@@ -526,7 +532,6 @@ header {
   }
 }
 .hero__overlay {
-  height: 25vh;
   width: 100%;
   background-color: rgba(50, 50, 50, 0.5);
   z-index: 2;
@@ -534,6 +539,7 @@ header {
 @media (min-width: 1280px) {
   .hero__overlay {
     height: 50vh;
+    padding-top: 0;
   }
 }
 
@@ -715,8 +721,8 @@ header {
 }
 .comments__title {
   font-family: avenir-bold;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 13px;
+  line-height: 18px;
   font-weight: 700;
   padding: 16px 16px 8px 16px;
   color: #323232;
@@ -728,6 +734,13 @@ header {
     line-height: 44px;
     font-weight: 700;
     color: #323232;
+  }
+}
+@media (min-width: 1280px) {
+  .comments__title {
+    position: relative;
+    right: 35%;
+    padding-top: 2rem;
   }
 }
 .comments__container {
@@ -757,9 +770,9 @@ header {
   flex-direction: column;
   color: #AFAFAF;
   font-family: avenir-bold;
-  font-size: 10px;
-  line-height: 20px;
-  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
   padding-top: 8px;
 }
 @media (min-width: 768px) {
@@ -794,16 +807,16 @@ header {
   flex-direction: column;
   color: #AFAFAF;
   font-family: avenir-bold;
-  font-size: 10px;
-  line-height: 20px;
-  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
   padding-top: 12px;
 }
 @media (min-width: 768px) {
   .comments__comment {
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
   }
 }
 .comments__comment--input {
@@ -836,18 +849,21 @@ header {
   border-radius: 4px;
   height: 36px;
   font-family: avenir;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.comments__button--press:hover {
+  background-color: #000000;
 }
 @media (min-width: 768px) {
   .comments__button--press {
-    width: 20%;
+    width: 25%;
     position: relative;
     left: 80%;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
   }
 }
 .comments__list {
@@ -888,29 +904,29 @@ header {
 }
 .comments__active--name {
   font-family: avenir-bold;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .comments__active--name {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
   }
 }
 .comments__active--date {
   font-family: avenir;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
   color: #AFAFAF;
 }
 @media (min-width: 768px) {
   .comments__active--date {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
   }
 }
 .comments__active--comment {

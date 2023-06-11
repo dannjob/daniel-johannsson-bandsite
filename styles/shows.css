@@ -214,8 +214,13 @@ header {
 .nav__list--inactive {
   border-bottom: 4px solid #323232;
   width: 50%;
-  color: #ffffff;
+  color: #AFAFAF;
   text-decoration: none;
+}
+.nav__list--inactive:hover {
+  font-family: avenir;
+  border-bottom: 4px solid #ffffff;
+  color: #ffffff;
 }
 
 * {
@@ -228,20 +233,15 @@ header {
   background-image: url(../assets/Images/hero-shows.jpg);
   background-size: cover;
   background-position: center;
-  height: 50vh;
   background-color: #323232 0.5;
 }
-@media (min-width: 768px) {
-  .hero {
-    height: 60vh;
-  }
+.hero__overlay {
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.5);
+  z-index: 2;
 }
-@media (min-width: 1280px) {
-  .hero {
-    padding-top: 15rem;
-    height: 60vh;
-    display: flex;
-  }
+.hero__text {
+  width: 35%;
 }
 .hero__album {
   font-family: avenir-demi;

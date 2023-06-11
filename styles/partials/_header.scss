@@ -72,7 +72,17 @@ header{
         &__list--inactive {
             border-bottom: 4px solid $primaryBandsite;
             width: 50%;
-            color:$primaryWhite;
-            text-decoration: none;
+            color:$primarySilver;
+            text-decoration: none; 
+            
+            &:hover{
+            font-family: avenir;
+            border-bottom: 4px solid $primaryWhite;
+            color:$primaryWhite
+            
+            
         }
+        }
+    
+       
     }
