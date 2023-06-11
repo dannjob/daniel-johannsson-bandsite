@@ -233,20 +233,30 @@ header {
   background-image: url(../assets/Images/hero-shows.jpg);
   background-size: cover;
   background-position: center;
-  height: 50vh;
-  background-color: #323232 0.5;
-}
-@media (min-width: 768px) {
-  .hero {
-    height: 60vh;
-  }
+  list-style: none;
 }
 @media (min-width: 1280px) {
   .hero {
-    padding-top: 15rem;
-    height: 60vh;
     display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
   }
+}
+.hero__overlay {
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.5);
+  z-index: 2;
+}
+@media (min-width: 1280px) {
+  .hero__text--container {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0 10rem 10rem;
+  }
+}
+.hero__text {
+  width: 35%;
 }
 .hero__album {
   font-family: avenir-demi;
@@ -283,6 +293,11 @@ header {
     width: 70%;
   }
 }
+@media (min-width: 1280px) {
+  .hero__song {
+    width: 75%;
+  }
+}
 .hero__soundcloud {
   width: 90%;
   height: 50%;
@@ -297,16 +312,10 @@ header {
 @media (min-width: 1280px) {
   .hero__soundcloud {
     height: 25%;
-    width: 75%;
-    padding-top: 7rem;
-  }
-}
-@media (min-width: 1280px) {
-  .hero__text {
-    display: flex;
-    flex-direction: column;
-    padding-left: 8rem;
-    width: 130%;
+    width: 100%;
+    padding: 10rem 0 10rem 10rem;
+    position: relative;
+    right: 20rem;
   }
 }
 
@@ -343,6 +352,9 @@ header {
   list-style-type: none;
   padding-bottom: 16px;
 }
+.shows__list :hover {
+  background-color: #FAFAFA;
+}
 .shows__showcard {
   display: flex;
   flex-direction: column;
@@ -370,6 +382,9 @@ header {
     bottom: 5rem;
     width: 70%;
   }
+}
+.shows__showcard :hover {
+  background-color: #FAFAFA;
 }
 .shows__showcard span {
   flex: 1;
@@ -431,6 +446,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.shows__tickets :hover {
+  background-color: #000000 !important;
 }
 .shows__table {
   display: none;

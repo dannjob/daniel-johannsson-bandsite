@@ -352,6 +352,9 @@ header {
   list-style-type: none;
   padding-bottom: 16px;
 }
+.shows__list :hover {
+  background-color: #FAFAFA;
+}
 .shows__showcard {
   display: flex;
   flex-direction: column;
@@ -379,6 +382,9 @@ header {
     bottom: 5rem;
     width: 70%;
   }
+}
+.shows__showcard :hover {
+  background-color: #FAFAFA;
 }
 .shows__showcard span {
   flex: 1;
@@ -440,6 +446,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.shows__tickets:hover {
+  background-color: #000000 !important;
 }
 .shows__table {
   display: none;
