@@ -32,26 +32,26 @@ commentsEl.appendChild(commentsListEl);
 
 const commentsMax = 3;
 
-const generateList = () => {
+function displayComment() {
   commentsListEl.innerHTML = "";
 
   const commentsDisplay = comments.slice(0, commentsMax);
 
-  for (let i = 0; i < comments.length; i++) {
+  for (let i = 0; i < commentsDisplay.length; i++) {
     let activeComment = commentsDisplay[i];
 
     let commentsItemEl = document.createElement("li");
     commentsItemEl.classList.add("comments__active");
 
-    let nameEl = document.createElement("div");
+    let nameEl = document.createElement("ul");
     nameEl.classList.add("comments__active--name");
     nameEl.innerText = activeComment.name;
 
-    let dateEl = document.createElement("div");
+    let dateEl = document.createElement("ul");
     dateEl.classList.add("comments__active--date");
     dateEl.innerText = activeComment.date;
 
-    let commentEl = document.createElement("div");
+    let commentEl = document.createElement("ul");
     commentEl.classList.add("comments__active--comment");
     commentEl.innerText = activeComment.comment;
 
@@ -61,9 +61,9 @@ const generateList = () => {
 
     commentsListEl.appendChild(commentsItemEl);
   }
-};
+}
 
-generateList();
+displayComment();
 
 // ==========
 // ==========
@@ -92,7 +92,7 @@ commentsButton.addEventListener("click", (event) => {
 
   comments.unshift(newComment);
 
-  generateList();
+  displayComment();
 
   commentsNameInput.value = "";
   commentsCommentInput.value = "";
