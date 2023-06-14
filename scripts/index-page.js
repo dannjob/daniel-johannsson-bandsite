@@ -1,20 +1,4 @@
 
-axios.get(
-  "https://project-1-api.herokuapp.com/comments?api_key=ebb5bfc9-e452-4e64-b3db-b981d505d906"
-).then((response) => {
-  console.log(response.data);
-  comments = response.data;
-});
-
-
-axios.post(
-    "https://project-1-api.herokuapp.com/comments?api_key=ebb5bfc9-e452-4e64-b3db-b981d505d906"
-  )
-  .then((response) => {
-    console.log(response.data);
-    comments = response.data;
-    displayComments();
-  });
 
 
 // const comments = [
@@ -51,10 +35,10 @@ commentsEl.appendChild(commentsListEl);
 
 const commentsMax = 3;
 
-function displayComment() {
+function displayComment(commentsData) {
   commentsListEl.innerHTML = "";
 
-  const commentsDisplay = comments.slice(0, commentsMax);
+  const commentsDisplay = commentsData.slice(0, commentsMax);
 
   for (let i = 0; i < commentsDisplay.length; i++) {
     let activeComment = commentsDisplay[i];
@@ -78,7 +62,7 @@ function displayComment() {
 
     let dateEl = document.createElement("ul");
     dateEl.classList.add("comments__active--date");
-    dateEl.innerText = activeComment.date;
+    dateEl.innerText = formatDate(activeComment.timestamp);
 
     let commentEl = document.createElement("ul");
     commentEl.classList.add("comments__active--comment");
@@ -96,8 +80,21 @@ function displayComment() {
     commentsListEl.appendChild(commentsItemEl);
   }
 }
+function formatDate(timestamp) {
+    const dateStamp = new Date(timestamp);
+    return dateStamp.toLocaleDateString();
+    
+}
 
-displayComment();
+axios.get(
+  "https://project-1-api.herokuapp.com/comments?api_key=ebb5bfc9-e452-4e64-b3db-b981d505d906"
+).then((response) => {
+  console.log(response.data);
+  const commentsData = response.data;
+  displayComment(commentsData);
+})
+
+displayComment([]);
 
 
 
