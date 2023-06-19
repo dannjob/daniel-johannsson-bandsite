@@ -7,281 +7,298 @@
 
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: avenir;
-    
+
 }
 
 
-.hero{
+.hero {
     background-image: url(../assets/Images/hero-bio.jpg);
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     height: 25vh;
     display: flex;
     background-color: $primaryBandsite 0.5;
 
-    &__title{
-    padding-left: 16px;
-    display: flex;
-    align-items: center;
-    font-family: Avenir;
-    font-size: $header-font-size-mobile;
-    line-height: $header-line-height-mobile;
-    font-weight: $header-font-weight-mobile;
-    color:$primaryWhite;
+    &__title {
+        padding-left: 16px;
+        display: flex;
+        align-items: center;
+        font-family: Avenir;
+        font-size: $header-font-size-mobile;
+        line-height: $header-line-height-mobile;
+        font-weight: $header-font-weight-mobile;
+        color: $primaryWhite;
 
 
-    @include media-tablet{
-        font-family: avenir-bold;
-        font-size: $header-font-size-tablet;
-        line-height: $header-line-height-tablet;
-        font-weight: $header-font-weight-tablet;
-        padding-left: 36px;
+        @include media-tablet {
+            font-family: avenir-bold;
+            font-size: $header-font-size-tablet;
+            line-height: $header-line-height-tablet;
+            font-weight: $header-font-weight-tablet;
+            padding-left: 36px;
+        }
     }
-    } 
-    @include media-desktop{
+
+    @include media-desktop {
         padding-top: 0;
         height: 50vh;
         width: 100%;
-        
+
     }
-    &__title{
-        @include media-desktop{
-        padding-left: 8%;
-        
+
+    &__title {
+        @include media-desktop {
+            padding-left: 8%;
+
         }
     }
-    &__overlay{
+
+    &__overlay {
         // height: 25vh;
         width: 100%;
-        background-color: rgba(50,50,50,.5);
+        background-color: rgba(50, 50, 50, .5);
         z-index: 2;
 
-        @include media-desktop{
+        @include media-desktop {
             height: 50vh;
             padding-top: 0;
-           
-                    
+
+
         }
     }
 }
-.about{
+
+.about {
     margin: 0;
     padding: 16px;
 
-    @include media-tablet{
+    @include media-tablet {
         padding: 36px;
     }
-    
-    @include media-desktop{
+
+    @include media-desktop {
         padding: 36px 8%;
     }
-    
 
-    &__title{
+
+    &__title {
         font-family: avenir-bold;
         font-size: $section-font-size-mobile;
         line-height: $section-line-height-mobile;
         font-weight: $section-font-weight-mobile;
-        color:$primaryBandsite;
-        padding-bottom:16px;
+        color: $primaryBandsite;
+        padding-bottom: 16px;
 
-        @include media-tablet{
+        @include media-tablet {
             padding-top: 12px;
             font-family: avenir-bold;
-            font-size:$section-font-size-tablet;
-            line-height:$section-line-height-tablet;
+            font-size: $section-font-size-tablet;
+            line-height: $section-line-height-tablet;
             font-weight: $section-font-weight-tablet;
         }
-        
+
 
         &--image {
-            width:100%;
+            width: 100%;
 
-            @include media-tablet{
+            @include media-tablet {
                 padding: 16px 36px;
-                width:90%;
+                width: 90%;
+            }
+        }
+
+    }
+
+
+    &__quote {
+        font-family: avenir-demi;
+        font-size: $subheader-font-size-mobile;
+        line-height: $subheader-line-height-mobile;
+        font-weight: $subheader-font-weight-mobile;
+        color: $primaryBandsite;
+        padding-bottom: 8px;
+
+        @include media-tablet {
+            font-family: avenir-demi;
+            font-size: $subheader-font-size-tablet ;
+            line-height: $subheader-line-height-tablet;
+            font-weight: $subheader-font-weight-tablet;
+            padding: 8px 36px;
+
         }
     }
-        
+
+    &__author {
+        @include media-tablet {
+            font-family: avenir-demi;
+            font-size: $body-font-size-tablet;
+            line-height: $body-line-height-tablet;
+            font-weight: $body-font-weight-tablet;
+            padding-bottom: 40px;
+        }
     }
-    
-}
-.about__quote{
-    font-family: avenir-demi;
-    font-size: $subheader-font-size-mobile;
-    line-height: $subheader-line-height-mobile;
-    font-weight: $subheader-font-weight-mobile;
-    color:$primaryBandsite;
-    padding-bottom: 8px;
 
-    @include media-tablet{
+    &__subtitle {
         font-family: avenir-demi;
-        font-size:$subheader-font-size-tablet ;
-        line-height: $subheader-line-height-tablet;
-        font-weight: $subheader-font-weight-tablet;
-        padding: 8px 36px;
-
-    } 
-}
-.about__author{
-    @include media-tablet{
-        font-family: avenir-demi;
-        font-size:$body-font-size-tablet;
-        line-height: $body-line-height-tablet;
-        font-weight: $body-font-weight-tablet;
-        padding-bottom: 40px;
-    }
-}
-.about__subtitle{
-    font-family: avenir-demi;
-    font-size:$body-font-size-tablet;
-    line-height: $body-line-height-tablet;
-    font-weight: $body-font-weight-tablet;
-    padding-bottom: 16px;
-    padding-top: 8px;
-
-    @include media-tablet{
-        font-family: avenir-demi;
-        font-size:$subheader-font-size-tablet ;
-        line-height: $subheader-line-height-tablet;
-        font-weight: $subheader-font-weight-tablet;
-        padding: 8px 36px 36px 36px;
-    } 
-}
-.about__body{
-    font-family: avenir;
-    font-size: $body-font-size-mobile;
-    line-height: $body-line-height-mobile;
-    font-weight: $body-font-weight-mobile;
-    padding-bottom: 16px;
-    color: $primaryBandsite;
-
-    @include media-tablet{
-        font-family: avenir;
-        font-size:  $body-font-size-tablet;
-        line-height: $body-line-height-tablet;
-        font-weight: $body-font-weight-tablet;
-    }
-}
-.about__paragraphs{
-
-    @include media-tablet{
-        display: flex;
-        column-gap: 36px;
-        padding: 0 36px;
         font-size: $body-font-size-tablet;
         line-height: $body-line-height-tablet;
         font-weight: $body-font-weight-tablet;
-        color:$primaryBandsite;
+        padding-bottom: 16px;
+        padding-top: 8px;
+
+        @include media-tablet {
+            font-family: avenir-demi;
+            font-size: $subheader-font-size-tablet ;
+            line-height: $subheader-line-height-tablet;
+            font-weight: $subheader-font-weight-tablet;
+            padding: 8px 36px 36px 36px;
+        }
     }
-}
 
-.photogallery{
-    margin:0;
-    padding:0;
-    background-color: $secondaryAlabaster;
-    
+    &__body {
+        font-family: avenir;
+        font-size: $body-font-size-mobile;
+        line-height: $body-line-height-mobile;
+        font-weight: $body-font-weight-mobile;
+        padding-bottom: 16px;
+        color: $primaryBandsite;
 
-    &__title{
-        font-family: avenir-bold;
-        font-size: $section-font-size-mobile;
-        line-height: $section-line-height-mobile;
-        font-weight: $section-font-weight-mobile;
-        padding: 16px 16px 8px 16px;
-        color:$primaryBandsite;
+        @include media-tablet {
+            font-family: avenir;
+            font-size: $body-font-size-tablet;
+            line-height: $body-line-height-tablet;
+            font-weight: $body-font-weight-tablet;
+        }
+    }
 
-        @include media-tablet{
+    &__paragraphs {
+
+        @include media-tablet {
+            display: flex;
+            column-gap: 36px;
+            padding: 0 36px;
+            font-size: $body-font-size-tablet;
+            line-height: $body-line-height-tablet;
+            font-weight: $body-font-weight-tablet;
+            color: $primaryBandsite;
+        }
+    }
+
+    .photogallery {
+        margin: 0;
+        padding: 0;
+        background-color: $secondaryAlabaster;
+
+
+        &__title {
             font-family: avenir-bold;
-            font-size:$section-font-size-tablet;
-            line-height:$section-line-height-tablet;
-            font-weight: $section-font-weight-tablet;
+            font-size: $section-font-size-mobile;
+            line-height: $section-line-height-mobile;
+            font-weight: $section-font-weight-mobile;
+            padding: 16px 16px 8px 16px;
+            color: $primaryBandsite;
+
+            @include media-tablet {
+                font-family: avenir-bold;
+                font-size: $section-font-size-tablet;
+                line-height: $section-line-height-tablet;
+                font-weight: $section-font-weight-tablet;
+            }
+
+            @include media-desktop {
+                padding-bottom: 36px;
+                padding-left: 8%;
+
+            }
         }
-        @include media-desktop{
-            padding-bottom: 36px;
-            padding-left: 8%;
-            
+
+        &__photo {
+            padding: 8px 16px;
+            display: flex;
+            width: 90%;
         }
     }
-    &__photo{
-        padding: 8px 16px;
-        display: flex; 
-        width: 90%;
 }
-}
-.photogallery__photos{
 
-    @include media-tablet{
+.photogallery__photos {
+
+    @include media-tablet {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 18px;
-        
+
     }
-    @include media-desktop{
+
+    @include media-desktop {
         padding-bottom: 36px;
-        padding:36px 8%;
+        padding: 36px 8%;
     }
 }
 
 
-.comments{
+.comments {
 
-    @include media-tablet{
+    @include media-tablet {
         padding-left: 5rem;
         padding-right: 5rem;
     }
-    @include media-desktop{
+
+    @include media-desktop {
         padding-left: 25%;
         padding-right: 25%;
     }
 
-    &__title{
-    font-family: avenir-bold;
+    &__title {
+        font-family: avenir-bold;
         font-size: $body-font-size-mobile;
         line-height: $body-line-height-mobile;
         font-weight: $section-font-weight-mobile;
         padding: 16px 16px 8px 16px;
-        color:$primaryBandsite;
+        color: $primaryBandsite;
 
-        @include media-tablet{
-        font-family: avenir-bold;
-        font-size: $section-font-size-tablet;
-        line-height: $section-line-height-tablet;
-        font-weight: $section-font-weight-tablet;
-        color:$primaryBandsite;
+        @include media-tablet {
+            font-family: avenir-bold;
+            font-size: $section-font-size-tablet;
+            line-height: $section-line-height-tablet;
+            font-weight: $section-font-weight-tablet;
+            color: $primaryBandsite;
         }
 
-        @include media-desktop{
+        @include media-desktop {
             position: relative;
-            right:35%;
-            padding-top:2rem;
+            right: 35%;
+            padding-top: 2rem;
         }
 
-    }   
-
-    &__container{
-        display: flex;
-        padding:12px;
     }
-    &__imageprofile{
+
+    &__container {
+        display: flex;
+        padding: 12px;
+    }
+
+    &__imageprofile {
         border-radius: 50%;
-        width:36px;
+        width: 36px;
         height: 36px;
         padding: 12px;
 
-        @include media-tablet{
+        @include media-tablet {
             width: 48px;
             height: 48px;
         }
     }
-    &__input{
+
+    &__input {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding:0 12px
+        padding: 0 12px
     }
-    &__name{
+
+    &__name {
         display: flex;
         flex-direction: column;
         color: $primarySilver;
@@ -291,14 +308,14 @@
         font-weight: $body-font-weight-mobile;
         padding-top: 8px;
 
-        @include media-tablet{
+        @include media-tablet {
             font-family: avenir-bold;
             font-size: $label-font-size-tablet;
             line-height: $label-line-height-tablet;
             font-weight: $label-font-weight-tablet;
         }
 
-        &--input{
+        &--input {
             font-family: avenir;
             font-size: $subheader-font-size-mobile;
             line-height: $subheader-line-height-mobile;
@@ -312,14 +329,15 @@
 
 
 
-            @include media-tablet{
+            @include media-tablet {
                 font-size: $subheader-font-size-tablet;
                 line-height: $subheader-line-height-tablet;
                 font-weight: $subheader-font-weight-tablet;
             }
         }
     }
-    &__comment{
+
+    &__comment {
         display: flex;
         flex-direction: column;
         color: $primarySilver;
@@ -330,15 +348,15 @@
         padding-top: 12px;
 
 
-        @include media-tablet{
+        @include media-tablet {
             font-size: $body-font-size-tablet;
             line-height: $body-line-height-tablet;
             font-weight: $body-font-weight-tablet;
         }
 
-        
 
-        &--input{
+
+        &--input {
             font-family: avenir;
             font-size: $subheader-font-size-mobile;
             line-height: $subheader-line-height-mobile;
@@ -359,11 +377,12 @@
             }
         }
     }
-    &__button{
+
+    &__button {
         padding-top: 16px;
 
-        &--press{
-            color:$primaryWhite;
+        &--press {
+            color: $primaryWhite;
             background-color: $primaryBandsite;
             width: 100%;
             border-radius: 4px;
@@ -373,11 +392,11 @@
             line-height: $body-line-height-mobile;
             font-weight: $body-font-weight-mobile;
 
-            &:hover{
+            &:hover {
                 background-color: $secondaryBandsite;
             }
 
-            @include media-tablet{
+            @include media-tablet {
                 width: 25%;
                 position: relative;
                 left: 80%;
@@ -388,19 +407,19 @@
         }
     }
 
-    &__list{
-        padding:16px;
-        list-style: none;     
+    &__list {
+        padding: 16px;
+        list-style: none;
     }
 
-    &__active{
+    &__active {
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
         padding: 16px;
         border-bottom: 1px solid $secondaryMercury;
 
-        &--commentor{
+        &--commentor {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -408,70 +427,70 @@
             left: 36px;
             width: 90%;
 
-            &-meta{
+            &-meta {
                 display: flex;
                 flex: row;
                 justify-content: space-between;
             }
         }
-    
-       
-        &--img{
+
+
+        &--img {
             background-color: $secondaryMercury;
             width: 36px;
             height: 36px;
             border-radius: 50%;
 
-            @include media-tablet{
+            @include media-tablet {
                 width: 48px;
                 height: 48px;
             }
-            
+
         }
 
-    
-        &--name{
+
+        &--name {
             font-family: avenir-bold;
             font-size: $body-font-size-mobile;
             line-height: $body-line-height-mobile;
             font-weight: $body-font-weight-mobile;
 
-            @include media-tablet{
+            @include media-tablet {
                 font-size: $body-font-size-tablet;
                 line-height: $body-line-height-tablet;
                 font-weight: $body-font-weight-tablet;
             }
-            
+
         }
 
-        &--date{
+        &--date {
             font-family: avenir;
             font-size: $body-font-size-mobile;
             line-height: $body-line-height-mobile;
             font-weight: $body-font-weight-mobile;
-            color:$primarySilver;
+            color: $primarySilver;
 
-            @include media-tablet{
+            @include media-tablet {
                 font-size: $body-font-size-tablet;
                 line-height: $body-line-height-tablet;
                 font-weight: $body-font-weight-tablet;
             }
         }
 
-        &--comment{
+        &--comment {
             font-family: avenir;
             font-size: $body-font-size-mobile;
             line-height: $body-line-height-mobile;
             font-weight: $body-font-weight-mobile;
 
-            @include media-tablet{
+            @include media-tablet {
                 font-size: $body-font-size-tablet;
                 line-height: $body-line-height-tablet;
                 font-weight: $body-font-weight-tablet;
             }
-            
+
         }
     }
 
-    
+
 }
