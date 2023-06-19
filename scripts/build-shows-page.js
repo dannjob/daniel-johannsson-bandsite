@@ -94,6 +94,12 @@ const generateList = () => {
 
       let ticketsButton = listItemEl.querySelector(".shows__tickets");
       ticketsButton.addEventListener("click", function () {
+        
+        let allListItems = showsListEl.querySelectorAll(".shows__showcard");
+        allListItems.forEach((item) => {
+          item.style.backgroundColor = "";
+        });
+        
         listItemEl.style.backgroundColor = "#E1E1E1";
       });
 

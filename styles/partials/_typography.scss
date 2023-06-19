@@ -3,9 +3,9 @@
 @font-face {
     font-family: avenir-bold;
     src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format(opentype);
-    font-style:normal;
-    font-weight:700;
-}   
+    font-style: normal;
+    font-weight: 700;
+}
 
 @font-face {
     font-family: avenir-demi;
@@ -24,55 +24,54 @@
 
 // VARIABLES
 
-$header-font-size-tablet:60px;
-$header-line-height-tablet:68px;
-$header-font-weight-tablet:700;
+$header-font-size-tablet: 60px;
+$header-line-height-tablet: 68px;
+$header-font-weight-tablet: 700;
 
-$section-font-size-tablet:36px;
-$section-line-height-tablet:44px;
-$section-font-weight-tablet:700;
+$section-font-size-tablet: 36px;
+$section-line-height-tablet: 44px;
+$section-font-weight-tablet: 700;
 
-$subheader-font-size-tablet:24px;
-$subheader-line-height-tablet:32px;
-$subheader-font-weight-tablet:600;
+$subheader-font-size-tablet: 24px;
+$subheader-line-height-tablet: 32px;
+$subheader-font-weight-tablet: 600;
 
-$body-font-size-tablet:14px;
-$body-line-height-tablet:22px;
-$body-font-weight-tablet:400;
+$body-font-size-tablet: 14px;
+$body-line-height-tablet: 22px;
+$body-font-weight-tablet: 400;
 
-$footer-font-size-tablet:14px;
-$footer-line-height-tablet:20px;
-$footer-font-weight-tablet:400;
+$footer-font-size-tablet: 14px;
+$footer-line-height-tablet: 20px;
+$footer-font-weight-tablet: 400;
 
-$label-font-size-tablet:12px;
-$label-line-height-tablet:20px;
-$label-font-weight-tablet:700;
+$label-font-size-tablet: 12px;
+$label-line-height-tablet: 20px;
+$label-font-weight-tablet: 700;
 
 
 
 // VARIABLE MOBILE
 
-$header-font-size-mobile:24px;
-$header-line-height-mobile:32px;
-$header-font-weight-mobile:700;
+$header-font-size-mobile: 24px;
+$header-line-height-mobile: 32px;
+$header-font-weight-mobile: 700;
 
-$section-font-size-mobile:24px;
-$section-line-height-mobile:32px;
-$section-font-weight-mobile:700;
+$section-font-size-mobile: 24px;
+$section-line-height-mobile: 32px;
+$section-font-weight-mobile: 700;
 
-$subheader-font-size-mobile:14px;
-$subheader-line-height-mobile:22px;
-$subheader-font-weight-mobile:600;
+$subheader-font-size-mobile: 14px;
+$subheader-line-height-mobile: 22px;
+$subheader-font-weight-mobile: 600;
 
-$body-font-size-mobile:13px;
-$body-line-height-mobile:18px;
-$body-font-weight-mobile:400;
+$body-font-size-mobile: 13px;
+$body-line-height-mobile: 18px;
+$body-font-weight-mobile: 400;
 
-$footer-font-size-mobile:13px;
-$footer-line-height-mobile:18px;
-$footer-font-weight-mobile:400;
+$footer-font-size-mobile: 13px;
+$footer-line-height-mobile: 18px;
+$footer-font-weight-mobile: 400;
 
-$label-font-size-mobile:10px;
-$label-line-height-mobile:20px;
-$label-font-weight-mobile:700;
-
+$label-font-size-mobile: 10px;
+$label-line-height-mobile: 20px;
+$label-font-weight-mobile: 700;

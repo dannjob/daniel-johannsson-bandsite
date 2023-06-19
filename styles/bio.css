@@ -141,92 +141,91 @@
 header {
   background-color: #323232;
   color: #ffffff;
-  padding: 8px 0 0 0;
+  padding: 2rem 0 0 0;
   font-family: avenir-bold;
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   header {
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    padding: 24px 36px 0 36px;
+    flex-direction: row;
+    justify-content: baseline;
+    height: 7rem;
   }
 }
-@media (min-width: 1280px) {
-  header {
-    padding: 48px 0 0 8%;
-    align-items: baseline;
-  }
-}
-
 .header__bandsite--logo {
   display: flex;
   justify-content: center;
-  padding: 8px 0;
-  height: 3vh;
+  height: 2rem;
 }
 @media (min-width: 768px) {
   .header__bandsite--logo {
-    padding-right: 36px;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    height: 3rem;
   }
 }
 @media (min-width: 1280px) {
   .header__bandsite--logo {
-    height: 20px;
+    height: 3rem;
+    padding: 0.2rem 1rem 0.5rem 3rem;
   }
 }
 
 .nav {
+  padding: 0;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .nav__list {
   display: flex;
   list-style-type: none;
-  justify-content: center;
   font-family: avenir-demi;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
-  padding-bottom: 8px;
+  padding: 1.1rem 0;
 }
-.nav__list--active {
+.nav__list-active {
   border-bottom: 4px solid #ffffff;
-  width: 50%;
 }
 @media (min-width: 768px) {
   .nav__list {
-    padding-left: 36px;
-    padding-right: 36px;
     font-family: avenir;
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
+    margin-left: 3rem;
   }
 }
 @media (min-width: 1280px) {
   .nav__list {
     padding-bottom: 2rem;
+    margin-left: 4rem;
   }
 }
-.nav__list--inactive {
+.nav__list-inactive {
   border-bottom: 4px solid #323232;
-  width: 50%;
-  color: #AFAFAF;
+  color: #E1E1E1;
   text-decoration: none;
 }
-.nav__list--inactive:hover {
+.nav__list-inactive:hover {
   font-family: avenir;
-  border-bottom: 4px solid #ffffff;
-  color: #ffffff;
+  border-bottom: 4px solid #E1E1E1;
+  color: #E1E1E1;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: avenir;
+  font-style: normal;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -508,6 +507,9 @@ header {
   margin: 0;
   padding: 0;
   font-family: avenir;
+  font-style: normal;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -563,7 +565,8 @@ header {
 
 .about {
   margin: 0;
-  padding: 16px;
+  padding: 1rem;
+  background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .about {
