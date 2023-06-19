@@ -263,11 +263,11 @@ header {
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
-  padding: 32px 0 16px 16px;
+  padding: 2rem 0 1rem 1rem;
 }
 @media (min-width: 768px) {
   .hero__album {
-    padding: 36px;
+    padding: 2rem;
     font-family: avenir-demi;
     font-size: 24px;
     line-height: 32px;
@@ -280,11 +280,11 @@ header {
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
-  padding: 16px 0 16px 16px;
+  padding: 1rem 0 1rem 1rem;
 }
 @media (min-width: 768px) {
   .hero__song {
-    padding: 36px;
+    padding: 2rem;
     font-family: avenir-bold;
     font-size: 60px;
     line-height: 68px;
@@ -300,18 +300,18 @@ header {
 .hero__soundcloud {
   width: 90%;
   height: 50%;
-  padding: 16px 16px 32px 16px;
+  padding: 1rem 1rem 2rem 1rem;
 }
 @media (min-width: 768px) {
   .hero__soundcloud {
     width: 55%;
-    padding: 36px;
+    padding: 2rem;
   }
 }
 @media (min-width: 1280px) {
   .hero__soundcloud {
     height: 25%;
-    width: 100%;
+    width: 140%;
     padding: 10rem 0 10rem 10rem;
     position: relative;
     right: 20rem;
@@ -321,11 +321,11 @@ header {
 .shows {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 1rem;
 }
 @media (min-width: 768px) {
   .shows {
-    padding: 36px;
+    padding: 2rem;
   }
 }
 .shows__title {
@@ -349,7 +349,7 @@ header {
 }
 .shows__list {
   list-style-type: none;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
 }
 .shows__list :hover {
   background-color: #FAFAFA;
@@ -362,7 +362,7 @@ header {
   font-size: 10px;
   line-height: 20px;
   font-weight: 700;
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #E1E1E1;
 }
 @media (min-width: 768px) {
@@ -440,7 +440,7 @@ header {
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
-  padding: 4px;
+  padding: 0.5rem;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
@@ -475,7 +475,7 @@ header {
   }
 }
 .shows__table--date {
-  padding: 16px 0;
+  padding: 1rem 0;
   color: #AFAFAF;
   font-family: avenir;
   font-weight: 700;
@@ -483,7 +483,7 @@ header {
   font-size: 12px;
 }
 .shows__table--venue {
-  padding: 16px 0;
+  padding: 1rem 0;
   color: #AFAFAF;
   font-family: avenir;
   font-weight: 700;
@@ -493,7 +493,7 @@ header {
   right: 5rem;
 }
 .shows__table--location {
-  padding: 16px 0;
+  padding: 1rem 0;
   color: #AFAFAF;
   font-family: avenir;
   font-weight: 700;

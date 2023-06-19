@@ -55,10 +55,10 @@
         font-size: $subheader-font-size-mobile;
         line-height: $subheader-line-height-mobile;
         color: $primaryWhite;
-        padding: 32px 0 16px 16px;
+        padding: 2rem 0 1rem 1rem;
 
         @include media-tablet {
-            padding: 36px;
+            padding: 2rem;
             font-family: avenir-demi;
             font-size: $subheader-font-size-tablet;
             line-height: $subheader-line-height-tablet;
@@ -72,11 +72,11 @@
         font-size: $header-font-size-mobile;
         line-height: $header-line-height-mobile;
         color: $primaryWhite;
-        padding: 16px 0 16px 16px;
+        padding: 1rem 0 1rem 1rem;
 
 
         @include media-tablet {
-            padding: 36px;
+            padding: 2rem;
             font-family: avenir-bold;
             font-size: $header-font-size-tablet;
             line-height: $header-line-height-tablet;
@@ -93,16 +93,16 @@
     &__soundcloud {
         width: 90%;
         height: 50%;
-        padding: 16px 16px 32px 16px;
+        padding: 1rem 1rem 2rem 1rem;
 
         @include media-tablet {
             width: 55%;
-            padding: 36px;
+            padding: 2rem;
         }
 
         @include media-desktop {
             height: 25%;
-            width: 100%;
+            width: 140%;
             padding: 10rem 0 10rem 10rem;
             position: relative;
             right: 20rem;
@@ -114,10 +114,10 @@
 .shows {
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 1rem;
 
     @include media-tablet {
-        padding: 36px;
+        padding: 2rem;
     }
 
 
@@ -141,7 +141,7 @@
 
     &__list {
         list-style-type: none;
-        padding-bottom: 16px;
+        padding-bottom: 1rem;
 
         :hover {
             background-color: $secondaryAlabaster;
@@ -156,7 +156,7 @@
         font-size: $label-font-size-mobile;
         line-height: $label-line-height-mobile;
         font-weight: $label-font-weight-mobile;
-        padding-bottom: 16px;
+        padding-bottom: 1rem;
         border-bottom: 1px solid $secondaryMercury;
 
 
@@ -239,7 +239,7 @@
         font-size: $subheader-font-size-mobile;
         line-height: $subheader-line-height-mobile;
         font-weight: $subheader-font-weight-mobile;
-        padding: 4px;
+        padding: 0.5rem;
         border-radius: 4px;
         display: flex;
         flex-direction: row;
@@ -278,7 +278,7 @@
         }
 
         &--date {
-            padding: 16px 0;
+            padding: 1rem 0;
             color: $primarySilver;
             font-family: avenir;
             font-weight: $label-font-weight-tablet;
@@ -287,7 +287,7 @@
         }
 
         &--venue {
-            padding: 16px 0;
+            padding: 1rem 0;
             color: $primarySilver;
             font-family: avenir;
             font-weight: $label-font-weight-tablet;
@@ -298,7 +298,7 @@
         }
 
         &--location {
-            padding: 16px 0;
+            padding: 1rem 0;
             color: $primarySilver;
             font-family: avenir;
             font-weight: $label-font-weight-tablet;
